@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ColoredEditor.ServiceColors" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdGYXN0Q29sb3JlZFRleHRCb3gsIFZlcnNpb249Mi4xNi4yNi4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWZiOGFhMTJiOTk0ZWY2MWIMAwAAAFFTeXN0
+        ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2Vu
+        PWIwM2Y1ZjdmMTFkNTBhM2EFAQAAACJGYXN0Q29sb3JlZFRleHRCb3hOUy5TZXJ2aWNlQ29sb3JzBgAA
+        ACg8Q29sbGFwc2VNYXJrZXJGb3JlQ29sb3I+a19fQmFja2luZ0ZpZWxkKDxDb2xsYXBzZU1hcmtlckJh
+        Y2tDb2xvcj5rX19CYWNraW5nRmllbGQqPENvbGxhcHNlTWFya2VyQm9yZGVyQ29sb3I+a19fQmFja2lu
+        Z0ZpZWxkJjxFeHBhbmRNYXJrZXJGb3JlQ29sb3I+a19fQmFja2luZ0ZpZWxkJjxFeHBhbmRNYXJrZXJC
+        YWNrQ29sb3I+a19fQmFja2luZ0ZpZWxkKDxFeHBhbmRNYXJrZXJCb3JkZXJDb2xvcj5rX19CYWNraW5n
+        RmllbGQEBAQEBAQUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAFFN5c3RlbS5EcmF3aW5nLkNvbG9yAwAA
+        ABRTeXN0ZW0uRHJhd2luZy5Db2xvcgMAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAFFN5c3RlbS5E
+        cmF3aW5nLkNvbG9yAwAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgMAAAACAAAABfz///8UU3lzdGVtLkRy
+        YXdpbmcuQ29sb3IEAAAABG5hbWUFdmFsdWUKa25vd25Db2xvcgVzdGF0ZQEAAAAJBwcDAAAACgAAAAAA
+        AAAAlgABAAH7/////P///woAAAAAAAAAAKQAAQAB+v////z///8KAAAAAAAAAACWAAEAAfn////8////
+        CniRzv8AAAAAAAACAAH4/////P///woAAAAAAAAAAKQAAQAB9/////z///8KAAAAAAAAAACWAAEACw==
+</value>
+  </data>
+  <data name="ColoredEditor.Text" xml:space="preserve">
+    <value>{
+   "Count" : 2,
+   "Database" : [
+      {
+         "KvValue" : 980,
+         "StatorSize" : 22,
+         "Thickness" : 12,
+         "ShellDiameter" : 27.5,
+         "Weight" : 56,
+         "Height" : 40,
+         "StandbyCurrent" : 0.7,
+         "InternalResistance" : 0.123,
+         "MaximumContinuousCurrent" : 20,
+         "MaximumContinuousPower" : 330,
+         "PartMaterial" : {
+            "Density" : 2.8,
+            "Model" : "Carbon fiber",
+            "Brand" : "N/A",
+            "UnitPrice" : 0,
+            "UserEvaluation" : 100
+         },
+         "AdaptedPropellerModels" : [
+            "9450"
+         ],
+         "CurveItemsByPropeller" : [
+            {
+               "CurveList" : [
+                  {
+                     "Voltage" : 11.1,
+                     "CurrentPoints" : [
+                        0.9,
+                        1.9,
+                        3.2,
+                        4.6,
+                        6.2,
+                        8,
+                        10.2
+                     ],
+                     "ThrustPoints" : [
+                        100,
+                        200,
+                        300,
+                        400,
+                        500,
+                        600,
+                        720
+                     ],
+                     "PowerPoints" : [
+                        10,
+                        21,
+                        36,
+                        51,
+                        69,
+                        89,
+                        113
+                     ],
+                     "EfficiencyPoints" : [
+                        10.01,
+                        9.48,
+                        8.45,
+                        7.83,
+                        7.27,
+                        6.76,
+                        6.36
+                     ]
+                  },
+                  {
+                     "Voltage" : 12.5,
+                     "CurrentPoints" : [
+                        0.7,
+                        1.7,
+                        2.9,
+                        4.2,
+                        5.6,
+                        7.3,
+                        9,
+                        11.9
+                     ],
+                     "ThrustPoints" : [
+                        100,
+                        200,
+                        300,
+                        400,
+                        500,
+                        600,
+                        700,
+                        860
+                     ],
+                     "PowerPoints" : [
+                        9,
+                        21,
+                        36,
+                        53,
+                        70,
+                        91,
+                        113,
+                        149
+                     ],
+                     "EfficiencyPoints" : [
+                        11.43,
+                        9.41,
+                        8.28,
+                        7.62,
+                        7.14,
+                        6.58,
+                        6.22,
+                        5.78
+                     ]
+                  }
+               ]
+            }
+         ],
+         "Model" : "2212",
+         "Brand" : "SunnySky",
+         "UnitPrice" : 10,
+         "UserEvaluation" : 100
+      },
+      {
+         "KvValue" : 590,
+         "StatorSize" : 35,
+         "Thickness" : 8,
+         "ShellDiameter" : 42.5,
+         "Weight" : 90,
+         "Height" : 31,
+         "StandbyCurrent" : 1,
+         "InternalResistance" : 0.252,
+         "MaximumContinuousCurrent" : 40,
+         "MaximumContinuousPower" : 600,
+         "PartMaterial" : {
+            "Density" : 2.8,
+            "Model" : "Carbon fiber",
+            "Brand" : "N/A",
+            "UnitPrice" : 0,
+            "UserEvaluation" : 100
+         },
+         "AdaptedPropellerModels" : [
+            "1238",
+            "1555"
+         ],
+         "CurveItemsByPropeller" : [
+            {
+               "CurveList" : [
+                  {
+                     "Voltage" : 14.8,
+                     "CurrentPoints" : [
+                        2.6,
+                        3.3,
+                        4.81,
+                        7.16,
+                        8.57,
+                        10.25,
+                        14.4,
+                        16.2
+                     ],
+                     "ThrustPoints" : [
+                        250,
+                        300,
+                        400,
+                        500,
+                        600,
+                        700,
+                        800,
+                        900
+                     ],
+                     "PowerPoints" : [
+                        38.48,
+                        48.84,
+                        71.19,
+                        105.97,
+                        126.84,
+                        151.7,
+                        213.12,
+                        239.76
+                     ],
+                     "EfficiencyPoints" : [
+                        6.5,
+                        6.14,
+                        5.62,
+                        4.72,
+                        4.73,
+                        4.61,
+                        3.75,
+                        3.75
+                     ]
+                  }
+               ]
+            },
+            {
+               "CurveList" : [
+                  {
+                     "Voltage" : 14.8,
+                     "CurrentPoints" : [
+                        3.9,
+                        4.7,
+                        5.89,
+                        8.5,
+                        11.49,
+                        15,
+                        17,
+                        21.79,
+                        25
+                     ],
+                     "ThrustPoints" : [
+                        600,
+                        700,
+                        800,
+                        1000,
+                        1250,
+                        1500,
+                        1600,
+                        1800,
+                        2000
+                     ],
+                     "PowerPoints" : [
+                        57.72,
+                        69.56,
+                        87.17,
+                        125.8,
+                        170.05,
+                        222,
+                        251.6,
+                        322.49,
+                        370
+                     ],
+                     "EfficiencyPoints" : [
+                        10.4,
+                        10.06,
+                        9.18,
+                        7.95,
+                        7.35,
+                        6.76,
+                        6.36,
+                        5.58,
+                        5.41
+                     ]
+                  }
+               ]
+            }
+         ],
+         "Model" : "3508",
+         "Brand" : "SunnySky",
+         "UnitPrice" : 20,
+         "UserEvaluation" : 100
+      }
+   ]
+}</value>
+  </data>
+</root>
