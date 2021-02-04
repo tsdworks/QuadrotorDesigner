@@ -1,5 +1,6 @@
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\Program\FastColoredTextBox.dll
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\Program\FastColoredTextBox.pdb
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\FastColoredTextBox\obj\Debug\FastColoredTextBox.csprojAssemblyReference.cache
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.FastColoredTextBox.resources
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.FindForm.resources
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.GoToForm.resources
@@ -7,5 +8,6 @@ C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\FastColoredTextBox\obj\Debug\Fast
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.ReplaceForm.resources
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\FastColoredTextBox\obj\Debug\FastColoredTextBox.csproj.GenerateResource.cache
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\FastColoredTextBox\obj\Debug\FastColoredTextBox.csproj.CoreCompileInputs.cache
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\FastColoredTextBox\obj\Debug\FastColoredTextBox.csproj.CopyComplete
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\FastColoredTextBox\obj\Debug\FastColoredTextBox.dll
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\FastColoredTextBox\obj\Debug\FastColoredTextBox.pdb

@@ -2,10 +2,12 @@
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
+using DarkUI.Forms;
+using DarkUI.Controls;
 
 namespace FastColoredTextBoxNS
 {
-    public partial class FindForm : Form
+    public partial class FindForm : DarkForm
     {
         bool firstSearch = true;
         Place startPlace;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DarkUI.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace QuadrotorDesigner.Studio
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UserInterface.FormMain());
+            Application.Run(new UserInterface.FromLoad());
         }
     }
 }

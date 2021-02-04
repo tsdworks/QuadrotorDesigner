@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Windows.Forms;
+using DarkUI.Forms;
 
 namespace FastColoredTextBoxNS
 {
-    public partial class GoToForm : Form
+    public partial class GoToForm : DarkForm
     {
         public int SelectedLineNumber { get; set; }
         public int TotalLineCount { get; set; }
@@ -19,7 +20,7 @@ namespace FastColoredTextBoxNS
 
             this.tbLineNumber.Text = this.SelectedLineNumber.ToString();
 
-            this.label.Text = String.Format("Line number (1 - {0}):", this.TotalLineCount);
+            this.labelLineNumber.Text = String.Format("Line number (1 - {0}):", this.TotalLineCount);
         }
 
         protected override void OnShown(EventArgs e)

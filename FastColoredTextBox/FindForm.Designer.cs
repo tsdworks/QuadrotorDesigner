@@ -28,40 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btClose = new System.Windows.Forms.Button();
-            this.btFindNext = new System.Windows.Forms.Button();
-            this.tbFind = new System.Windows.Forms.TextBox();
-            this.cbRegex = new System.Windows.Forms.CheckBox();
-            this.cbMatchCase = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cbWholeWord = new System.Windows.Forms.CheckBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FindForm));
+            this.btClose = new DarkUI.Controls.DarkButton();
+            this.btFindNext = new DarkUI.Controls.DarkButton();
+            this.tbFind = new DarkUI.Controls.DarkTextBox();
+            this.cbRegex = new DarkUI.Controls.DarkCheckBox();
+            this.cbMatchCase = new DarkUI.Controls.DarkCheckBox();
+            this.labelFind = new DarkUI.Controls.DarkLabel();
+            this.cbWholeWord = new DarkUI.Controls.DarkCheckBox();
             this.SuspendLayout();
             // 
             // btClose
             // 
-            this.btClose.Location = new System.Drawing.Point(273, 73);
+            this.btClose.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btClose.Location = new System.Drawing.Point(279, 67);
             this.btClose.Name = "btClose";
-            this.btClose.Size = new System.Drawing.Size(75, 23);
+            this.btClose.Padding = new System.Windows.Forms.Padding(5);
+            this.btClose.Size = new System.Drawing.Size(75, 21);
             this.btClose.TabIndex = 5;
             this.btClose.Text = "Close";
-            this.btClose.UseVisualStyleBackColor = true;
             this.btClose.Click += new System.EventHandler(this.btClose_Click);
             // 
             // btFindNext
             // 
-            this.btFindNext.Location = new System.Drawing.Point(192, 73);
+            this.btFindNext.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btFindNext.Location = new System.Drawing.Point(198, 67);
             this.btFindNext.Name = "btFindNext";
-            this.btFindNext.Size = new System.Drawing.Size(75, 23);
+            this.btFindNext.Padding = new System.Windows.Forms.Padding(5);
+            this.btFindNext.Size = new System.Drawing.Size(75, 21);
             this.btFindNext.TabIndex = 4;
-            this.btFindNext.Text = "Find next";
-            this.btFindNext.UseVisualStyleBackColor = true;
+            this.btFindNext.Text = "Find Next";
             this.btFindNext.Click += new System.EventHandler(this.btFindNext_Click);
             // 
             // tbFind
             // 
-            this.tbFind.Location = new System.Drawing.Point(42, 12);
+            this.tbFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.tbFind.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbFind.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tbFind.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.tbFind.Location = new System.Drawing.Point(48, 11);
             this.tbFind.Name = "tbFind";
-            this.tbFind.Size = new System.Drawing.Size(306, 20);
+            this.tbFind.Size = new System.Drawing.Size(306, 23);
             this.tbFind.TabIndex = 0;
             this.tbFind.TextChanged += new System.EventHandler(this.cbMatchCase_CheckedChanged);
             this.tbFind.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbFind_KeyPress);
@@ -69,58 +76,63 @@
             // cbRegex
             // 
             this.cbRegex.AutoSize = true;
-            this.cbRegex.Location = new System.Drawing.Point(249, 38);
+            this.cbRegex.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cbRegex.Location = new System.Drawing.Point(286, 38);
             this.cbRegex.Name = "cbRegex";
-            this.cbRegex.Size = new System.Drawing.Size(57, 17);
+            this.cbRegex.Size = new System.Drawing.Size(63, 21);
             this.cbRegex.TabIndex = 3;
             this.cbRegex.Text = "Regex";
-            this.cbRegex.UseVisualStyleBackColor = true;
             this.cbRegex.CheckedChanged += new System.EventHandler(this.cbMatchCase_CheckedChanged);
             // 
             // cbMatchCase
             // 
             this.cbMatchCase.AutoSize = true;
-            this.cbMatchCase.Location = new System.Drawing.Point(42, 38);
+            this.cbMatchCase.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cbMatchCase.Location = new System.Drawing.Point(48, 38);
             this.cbMatchCase.Name = "cbMatchCase";
-            this.cbMatchCase.Size = new System.Drawing.Size(82, 17);
+            this.cbMatchCase.Size = new System.Drawing.Size(93, 21);
             this.cbMatchCase.TabIndex = 1;
             this.cbMatchCase.Text = "Match case";
-            this.cbMatchCase.UseVisualStyleBackColor = true;
             this.cbMatchCase.CheckedChanged += new System.EventHandler(this.cbMatchCase_CheckedChanged);
             // 
-            // label1
+            // labelFind
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Find: ";
+            this.labelFind.AutoSize = true;
+            this.labelFind.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelFind.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.labelFind.Location = new System.Drawing.Point(6, 14);
+            this.labelFind.Name = "labelFind";
+            this.labelFind.Size = new System.Drawing.Size(39, 17);
+            this.labelFind.TabIndex = 5;
+            this.labelFind.Text = "Find: ";
             // 
             // cbWholeWord
             // 
             this.cbWholeWord.AutoSize = true;
-            this.cbWholeWord.Location = new System.Drawing.Point(130, 38);
+            this.cbWholeWord.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.cbWholeWord.Location = new System.Drawing.Point(145, 38);
             this.cbWholeWord.Name = "cbWholeWord";
-            this.cbWholeWord.Size = new System.Drawing.Size(113, 17);
+            this.cbWholeWord.Size = new System.Drawing.Size(135, 21);
             this.cbWholeWord.TabIndex = 2;
             this.cbWholeWord.Text = "Match whole word";
-            this.cbWholeWord.UseVisualStyleBackColor = true;
             this.cbWholeWord.CheckedChanged += new System.EventHandler(this.cbMatchCase_CheckedChanged);
             // 
             // FindForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(360, 108);
+            this.ClientSize = new System.Drawing.Size(372, 100);
             this.Controls.Add(this.cbWholeWord);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelFind);
             this.Controls.Add(this.cbMatchCase);
             this.Controls.Add(this.cbRegex);
             this.Controls.Add(this.tbFind);
             this.Controls.Add(this.btFindNext);
             this.Controls.Add(this.btClose);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FindForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
@@ -135,12 +147,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btClose;
-        private System.Windows.Forms.Button btFindNext;
-        private System.Windows.Forms.CheckBox cbRegex;
-        private System.Windows.Forms.CheckBox cbMatchCase;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox cbWholeWord;
-        public System.Windows.Forms.TextBox tbFind;
+        private DarkUI.Controls.DarkButton btClose;
+        private DarkUI.Controls.DarkButton btFindNext;
+        private DarkUI.Controls.DarkCheckBox cbRegex;
+        private DarkUI.Controls.DarkCheckBox cbMatchCase;
+        private DarkUI.Controls.DarkLabel labelFind;
+        private DarkUI.Controls.DarkCheckBox cbWholeWord;
+        public DarkUI.Controls.DarkTextBox tbFind;
     }
 }

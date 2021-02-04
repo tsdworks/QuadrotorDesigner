@@ -1,9 +1,0 @@
-C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\Program\QuadrotorDesigner.Editor.dll
-C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\Program\QuadrotorDesigner.Editor.pdb
-C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Editor\obj\Debug\QuadrotorDesigner.Editor.csprojAssemblyReference.cache
-C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Editor\obj\Debug\QuadrotorDesigner.Editor.Control.ModelEditor.resources
-C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Editor\obj\Debug\QuadrotorDesigner.Editor.csproj.GenerateResource.cache
-C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Editor\obj\Debug\QuadrotorDesigner.Editor.csproj.CoreCompileInputs.cache
-C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Editor\obj\Debug\QuadrotorDesigner.Editor.csproj.CopyComplete
-C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Editor\obj\Debug\QuadrotorDesigner.Editor.dll
-C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Editor\obj\Debug\QuadrotorDesigner.Editor.pdb

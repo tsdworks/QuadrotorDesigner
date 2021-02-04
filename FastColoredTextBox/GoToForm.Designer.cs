@@ -28,64 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label = new System.Windows.Forms.Label();
-            this.tbLineNumber = new System.Windows.Forms.TextBox();
-            this.btnOk = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GoToForm));
+            this.labelLineNumber = new DarkUI.Controls.DarkLabel();
+            this.tbLineNumber = new DarkUI.Controls.DarkTextBox();
+            this.btnOk = new DarkUI.Controls.DarkButton();
+            this.btnCancel = new DarkUI.Controls.DarkButton();
             this.SuspendLayout();
             // 
-            // label
+            // labelLineNumber
             // 
-            this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(12, 9);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(96, 13);
-            this.label.TabIndex = 0;
-            this.label.Text = "Line Number (1/1):";
+            this.labelLineNumber.AutoSize = true;
+            this.labelLineNumber.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelLineNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.labelLineNumber.Location = new System.Drawing.Point(9, 7);
+            this.labelLineNumber.Name = "labelLineNumber";
+            this.labelLineNumber.Size = new System.Drawing.Size(117, 17);
+            this.labelLineNumber.TabIndex = 0;
+            this.labelLineNumber.Text = "Line Number (1/1):";
             // 
             // tbLineNumber
             // 
             this.tbLineNumber.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLineNumber.Location = new System.Drawing.Point(12, 29);
+            this.tbLineNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.tbLineNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbLineNumber.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tbLineNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.tbLineNumber.Location = new System.Drawing.Point(12, 27);
             this.tbLineNumber.Name = "tbLineNumber";
-            this.tbLineNumber.Size = new System.Drawing.Size(296, 20);
+            this.tbLineNumber.Size = new System.Drawing.Size(296, 23);
             this.tbLineNumber.TabIndex = 1;
             // 
             // btnOk
             // 
             this.btnOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOk.Location = new System.Drawing.Point(152, 71);
+            this.btnOk.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnOk.Location = new System.Drawing.Point(152, 65);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(75, 23);
+            this.btnOk.Padding = new System.Windows.Forms.Padding(5);
+            this.btnOk.Size = new System.Drawing.Size(75, 21);
             this.btnOk.TabIndex = 2;
             this.btnOk.Text = "OK";
-            this.btnOk.UseVisualStyleBackColor = true;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(233, 71);
+            this.btnCancel.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnCancel.Location = new System.Drawing.Point(233, 65);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Padding = new System.Windows.Forms.Padding(5);
+            this.btnCancel.Size = new System.Drawing.Size(75, 21);
             this.btnCancel.TabIndex = 3;
             this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // GoToForm
             // 
             this.AcceptButton = this.btnOk;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(320, 106);
+            this.ClientSize = new System.Drawing.Size(320, 98);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.tbLineNumber);
-            this.Controls.Add(this.label);
+            this.Controls.Add(this.labelLineNumber);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GoToForm";
@@ -102,9 +112,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label;
-        private System.Windows.Forms.TextBox tbLineNumber;
-        private System.Windows.Forms.Button btnOk;
-        private System.Windows.Forms.Button btnCancel;
+        private DarkUI.Controls.DarkLabel labelLineNumber;
+        private DarkUI.Controls.DarkTextBox tbLineNumber;
+        private DarkUI.Controls.DarkButton btnOk;
+        private DarkUI.Controls.DarkButton btnCancel;
     }
 }

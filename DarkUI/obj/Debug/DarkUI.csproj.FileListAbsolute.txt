@@ -1,3 +1,5 @@
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\Program\DarkUI.dll
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\Program\DarkUI.pdb
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\DarkUI\obj\Debug\DarkUI.Forms.DarkDialog.resources
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\DarkUI\obj\Debug\DarkUI.Forms.DarkMessageBox.resources
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\DarkUI\obj\Debug\DarkUI.Icons.DockIcons.resources
@@ -8,7 +10,5 @@ C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\DarkUI\obj\Debug\DarkUI.Icons.Scr
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\DarkUI\obj\Debug\DarkUI.Icons.TreeViewIcons.resources
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\DarkUI\obj\Debug\DarkUI.csproj.GenerateResource.cache
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\DarkUI\obj\Debug\DarkUI.csproj.CoreCompileInputs.cache
-C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\Program\DarkUI.dll
-C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\Program\DarkUI.pdb
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\DarkUI\obj\Debug\DarkUI.dll
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\DarkUI\obj\Debug\DarkUI.pdb

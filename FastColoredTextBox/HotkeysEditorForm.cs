@@ -5,10 +5,11 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using DarkUI.Forms;
 
 namespace FastColoredTextBoxNS
 {
-    public partial class HotkeysEditorForm : Form
+    public partial class HotkeysEditorForm : DarkForm
     {
         BindingList<HotkeyWrapper> wrappers = new BindingList<HotkeyWrapper>();
 

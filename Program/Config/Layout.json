@@ -1,0 +1,52 @@
+{
+  "Regions": [
+    {
+      "Area": "Document",
+      "Size": "0, 0",
+      "Groups": [
+        {
+          "Contents": [
+            ""
+          ],
+          "VisibleContent": ""
+        }
+      ]
+    },
+    {
+      "Area": "Left",
+      "Size": "196, 524",
+      "Groups": [
+        {
+          "Contents": [
+            "DockComponents"
+          ],
+          "VisibleContent": "DockComponents"
+        }
+      ]
+    },
+    {
+      "Area": "Right",
+      "Size": "202, 524",
+      "Groups": [
+        {
+          "Contents": [
+            "DockProperties"
+          ],
+          "VisibleContent": "DockProperties"
+        }
+      ]
+    },
+    {
+      "Area": "Bottom",
+      "Size": "626, 104",
+      "Groups": [
+        {
+          "Contents": [
+            "DockOutput"
+          ],
+          "VisibleContent": "DockOutput"
+        }
+      ]
+    }
+  ]
+}

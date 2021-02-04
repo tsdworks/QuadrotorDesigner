@@ -17,11 +17,13 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>..\Program\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,9 +34,21 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app_icon_128.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Program\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +60,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IO\FStream.cs" />
+    <Compile Include="UserInterface\DockEvents.cs" />
+    <Compile Include="UserInterface\DockTools\DockComponents\DockComponents.Action.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\DockTools\DockComponents\DockComponents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\DockTools\DockComponents\DockComponents.Designer.cs">
+      <DependentUpon>DockComponents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\DockTools\DockComponents\DockComponents.Display.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\DockTools\DockDocument\DockDocument.Action.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\DockTools\DockDocument\DockDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\DockTools\DockDocument\DockDocument.Designer.cs">
+      <DependentUpon>DockDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\DockTools\DockDocument\DockDocument.Display.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\DockTools\DockOutput\DockOutput.Action.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\DockTools\DockOutput\DockOutput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\DockTools\DockOutput\DockOutput.Designer.cs">
+      <DependentUpon>DockOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\DockTools\DockOutput\DockOutput.Display.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\DockTools\DockProperties\DockProperties.Action.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\DockTools\DockProperties\DockProperties.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\DockTools\DockProperties\DockProperties.Designer.cs">
+      <DependentUpon>DockProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\DockTools\DockProperties\DockProperties.Display.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserInterface\FormLoad\FormLoad.Action.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\FormLoad\FormLoad.Display.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\FormMain\FormMain.Action.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UserInterface\FormMain\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +127,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInterface\FormLoad\FromLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface\FormLoad\FromLoad.Designer.cs">
+      <DependentUpon>FromLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\FormMain\FormMain.Display.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +144,24 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserInterface\DockTools\DockComponents\DockComponents.resx">
+      <DependentUpon>DockComponents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\DockTools\DockDocument\DockDocument.resx">
+      <DependentUpon>DockDocument.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\DockTools\DockOutput\DockOutput.resx">
+      <DependentUpon>DockOutput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\DockTools\DockProperties\DockProperties.resx">
+      <DependentUpon>DockProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface\FormLoad\FromLoad.resx">
+      <DependentUpon>FromLoad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserInterface\FormMain\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,18 +183,48 @@
       <Project>{f19472f5-8c44-4c51-a8a0-b9de5f555255}</Project>
       <Name>DarkUI</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FastColoredTextBox\FastColoredTextBox.csproj">
+      <Project>{6dd14a85-ccfc-4774-bd26-0f5772512319}</Project>
+      <Name>FastColoredTextBox</Name>
+    </ProjectReference>
     <ProjectReference Include="..\fastJSON\fastJSON.csproj">
       <Project>{207e91b1-c9f8-4913-88e1-3549ef5f3273}</Project>
       <Name>fastJSON</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\QuadrotorDesigner.Editor\QuadrotorDesigner.Editor.csproj">
-      <Project>{86aebe39-ce63-4e90-95fd-128affa1735e}</Project>
-      <Name>QuadrotorDesigner.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="..\QuadrotorDesigner.Model\QuadrotorDesigner.Model.csproj">
       <Project>{59536d14-f5b2-434f-b9d3-579c308b0b06}</Project>
       <Name>QuadrotorDesigner.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="app_icon_128.ico" />
+    <None Include="Resources\web_page_icon.png" />
+    <None Include="Resources\run_icon.png" />
+    <None Include="Resources\design_icon.png" />
+    <None Include="Resources\delete_icon.png" />
+    <None Include="Resources\paste_icon.png" />
+    <None Include="Resources\copy_icon.png" />
+    <None Include="Resources\cut_icon.png" />
+    <None Include="Resources\redo_icon.png" />
+    <None Include="Resources\undo_icon.png" />
+    <None Include="Resources\find_icon.png" />
+    <None Include="Resources\replace_icon.png" />
+    <None Include="Resources\goto_line_icon.png" />
+    <None Include="Resources\save_as_icon.png" />
+    <None Include="Resources\save_all_icon.png" />
+    <None Include="Resources\save_icon.png" />
+    <None Include="Resources\info_icon.png" />
+    <None Include="Resources\exit_icon.png" />
+    <None Include="Resources\document_icon.png" />
+    <None Include="Resources\new_icon.png" />
+    <None Include="Resources\properties_docking_icon.png" />
+    <None Include="Resources\console_docking_icon.png" />
+    <None Include="Resources\component_file.png" />
+    <None Include="Resources\folder_open.png" />
+    <None Include="Resources\folder_closed.png" />
+    <None Include="Resources\component_docking_icon.png" />
+    <None Include="Resources\bg_load.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

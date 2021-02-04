@@ -698,8 +698,8 @@ namespace FastColoredTextBoxNS
                     break;
                 case Language.DARK_JSON:
                     StringStyle = new TextStyle(new SolidBrush(Color.FromArgb(206, 145, 120)), Brushes.Transparent, FontStyle.Regular);
-                    NumberStyle = MagentaStyle;
-                    KeywordStyle = BlueStyle;
+                    NumberStyle = new TextStyle(new SolidBrush(Color.FromArgb(181, 206, 168)), Brushes.Transparent, FontStyle.Regular);
+                    KeywordStyle = new TextStyle(new SolidBrush(Color.FromArgb(156, 220, 254)), Brushes.Transparent, FontStyle.Regular);
                     break;
             }
         }
@@ -1373,6 +1373,7 @@ namespace FastColoredTextBoxNS
             //
             if (JSONStringRegex == null)
                 InitJSONRegex();
+
             //keyword highlighting
             range.SetStyle(KeywordStyle, JSONKeywordRegex);
             //string highlighting
