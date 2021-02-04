@@ -10,24 +10,25 @@ using System.Windows.Forms;
 using DarkUI;
 using DarkUI.Forms;
 using DarkUI.Win32;
-using QuadrotorDesigner.Studio.IO;
-using QuadrotorDesigner.Studio.Properties;
+using QuadrotorDesigner.Utils.IOStream;
+using QuadrotorDesigner.Workspace.Properties;
 
-namespace QuadrotorDesigner.Studio.UserInterface
+namespace QuadrotorDesigner.Workspace.UserInterface
 {
     public partial class FormMain : DarkForm
     {
         public FormMain()
         {
             InitializeComponent();
-
-            // load dock panel
-            DisplayInitializeDockPanel();
         }
 
         private void FormMain_Load(object sender, EventArgs e)
         {
+            // load dock panel
+            DisplayInitializeDockPanel();
 
+            // log workspace
+            dockToolOutput.LogOutput(DateTime.Now.ToString("G") + " - Workspace Initialized.");
         }
 
         private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
@@ -38,7 +39,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
 
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DisplaySerializeDockPanel(FStream.CombinePath(Application.StartupPath, Resources.DockConfigFile, false));
+            
         }
 
         private void menuItemComponentsExplorer_Click(object sender, EventArgs e)

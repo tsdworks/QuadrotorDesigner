@@ -10,13 +10,20 @@ using System.Windows.Forms;
 using DarkUI.Controls;
 using DarkUI.Docking;
 
-namespace QuadrotorDesigner.Studio.UserInterface.DockTools
+namespace QuadrotorDesigner.Workspace.UserInterface.DockTools
 {
     public partial class DockOutput : DarkToolWindow
     {
         public DockOutput()
         {
             InitializeComponent();
+        }
+
+        public void LogOutput(string output)
+        {
+            DarkListItem listItem = new DarkListItem();
+            listItem.Text = output;
+            listOutput.Items.Add(listItem);
         }
     }
 }

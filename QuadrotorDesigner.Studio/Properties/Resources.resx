@@ -122,7 +122,7 @@
     <value>..\Resources\document_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LoadSplashDelay" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="find_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\find_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,13 +226,31 @@
   <data name="DockConfigFile" xml:space="preserve">
     <value>\Config\Layout.json</value>
   </data>
-  <data name="TitleFileEdited" xml:space="preserve">
-    <value>{0}* - Quadrotor Designer</value>
-  </data>
-  <data name="TitleFileOpened" xml:space="preserve">
-    <value>{0} - Quadrotor Designer</value>
-  </data>
   <data name="TitleNormal" xml:space="preserve">
     <value>Quadrotor Designer</value>
+  </data>
+  <data name="AssemblyPath" xml:space="preserve">
+    <value>\Models\Assembly\</value>
+  </data>
+  <data name="DesignFileExtName" xml:space="preserve">
+    <value>.assembly</value>
+  </data>
+  <data name="ModelFileExtName" xml:space="preserve">
+    <value>.model</value>
+  </data>
+  <data name="PreviewImageFileName" xml:space="preserve">
+    <value>{0}.jpg|{0}.png|{0}.bmp</value>
+  </data>
+  <data name="SplitChar" xml:space="preserve">
+    <value>|</value>
+  </data>
+  <data name="TemplateFileName" xml:space="preserve">
+    <value>_template</value>
+  </data>
+  <data name="TitleEditable" xml:space="preserve">
+    <value>[R/W]</value>
+  </data>
+  <data name="TitleReadonly" xml:space="preserve">
+    <value>[R]</value>
   </data>
 </root>

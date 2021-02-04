@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuadrotorDesigner.Studio.UserInterface
+namespace QuadrotorDesigner.Workspace.UserInterface
 {
     public class DockEvents
     {

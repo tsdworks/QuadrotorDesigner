@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{29D1F497-79E8-4BB3-830E-693F1846EA38}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>QuadrotorDesigner.Studio</RootNamespace>
-    <AssemblyName>QuadrotorDesigner.Studio</AssemblyName>
+    <RootNamespace>QuadrotorDesigner.Workspace</RootNamespace>
+    <AssemblyName>QuadrotorDesigner.Workspace</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,10 +42,6 @@
     </StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Program\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -60,7 +56,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IO\FStream.cs" />
+    <Compile Include="Doucuments\DocumentManager.cs" />
+    <Compile Include="Components\ComponentTreeView.cs" />
     <Compile Include="UserInterface\DockEvents.cs" />
     <Compile Include="UserInterface\DockTools\DockComponents\DockComponents.Action.cs">
       <SubType>UserControl</SubType>
@@ -187,13 +184,13 @@
       <Project>{6dd14a85-ccfc-4774-bd26-0f5772512319}</Project>
       <Name>FastColoredTextBox</Name>
     </ProjectReference>
-    <ProjectReference Include="..\fastJSON\fastJSON.csproj">
-      <Project>{207e91b1-c9f8-4913-88e1-3549ef5f3273}</Project>
-      <Name>fastJSON</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\QuadrotorDesigner.Model\QuadrotorDesigner.Model.csproj">
+    <ProjectReference Include="..\QuadrotorDesigner.Model\QuadrotorDesigner.Components.csproj">
       <Project>{59536d14-f5b2-434f-b9d3-579c308b0b06}</Project>
-      <Name>QuadrotorDesigner.Model</Name>
+      <Name>QuadrotorDesigner.Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QuadrotorDesigner.Utils\QuadrotorDesigner.Utils.csproj">
+      <Project>{be188491-2c90-4ca8-b824-40b4d6a5ce08}</Project>
+      <Name>QuadrotorDesigner.Utils</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

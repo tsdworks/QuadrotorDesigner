@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("Quadrotor Designer")]
-[assembly: AssemblyDescription("Quadrotor Designer")]
+[assembly: AssemblyTitle("Quadrotor Designer Workspace")]
+[assembly: AssemblyDescription("Quadrotor Designer Workspace")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Quadrotor Designer")]
+[assembly: AssemblyProduct("Quadrotor Designer Workspace")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

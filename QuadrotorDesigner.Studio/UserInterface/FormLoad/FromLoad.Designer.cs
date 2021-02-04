@@ -1,5 +1,5 @@
 ﻿
-namespace QuadrotorDesigner.Studio.UserInterface
+namespace QuadrotorDesigner.Workspace.UserInterface
 {
     partial class FromLoad
     {
@@ -55,7 +55,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::QuadrotorDesigner.Studio.Properties.Resources.bg_load;
+            this.BackgroundImage = global::QuadrotorDesigner.Workspace.Properties.Resources.bg_load;
             this.ClientSize = new System.Drawing.Size(280, 368);
             this.Controls.Add(this.labelLoadState);
             this.DoubleBuffered = true;

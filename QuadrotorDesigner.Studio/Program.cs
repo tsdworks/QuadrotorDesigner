@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuadrotorDesigner.Studio
+namespace QuadrotorDesigner.Workspace
 {
     static class Program
     {

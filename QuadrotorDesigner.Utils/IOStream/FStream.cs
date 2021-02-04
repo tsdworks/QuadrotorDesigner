@@ -1,13 +1,12 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
-namespace QuadrotorDesigner.Studio.IO
+namespace QuadrotorDesigner.Utils.IOStream
 {
     public class FStream
     {
@@ -59,6 +58,8 @@ namespace QuadrotorDesigner.Studio.IO
             return retValue;
         }
 
+
+
         public static string CombinePath(string pathToCombine1, string pathToCombine2, bool isURLStyle)
         {
             string retValue = string.Empty;
@@ -98,31 +99,26 @@ namespace QuadrotorDesigner.Studio.IO
             return retValue;
         }
 
-        public class SerializerHelper
+        public static List<FileInfo> GetAllFileInfo(string folderName, string extName)
         {
-            public static void Serialize<T>(T obj, string file)
-            {
-                using (var fs = File.CreateText(file))
-                {
-                    var serializer = new JsonSerializer();
-                    serializer.Converters.Add(new StringEnumConverter());
-                    serializer.Formatting = Formatting.Indented;
+            List<FileInfo> retValue = new List<FileInfo>();
 
-                    serializer.Serialize(fs, obj);
+            DirectoryInfo directoryPath = new DirectoryInfo(CombinePath(Application.StartupPath, folderName, false));
+
+            if (directoryPath.Exists)
+            {
+                FileInfo[] fileList = directoryPath.GetFiles();
+
+                foreach (FileInfo file in fileList)
+                {
+                    if (file.Extension == extName)
+                    {
+                        retValue.Add(file);
+                    }
                 }
             }
 
-            public static T Deserialize<T>(string file) where T : class
-            {
-                using (var fs = File.OpenText(file))
-                {
-                    var serializer = new JsonSerializer();
-                    serializer.Converters.Add(new StringEnumConverter());
-
-                    var result = serializer.Deserialize(fs, typeof(T));
-                    return result as T;
-                }
-            }
+            return retValue;
         }
     }
 }

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadrotorDesigner.Studio", "QuadrotorDesigner.Studio\QuadrotorDesigner.Studio.csproj", "{29D1F497-79E8-4BB3-830E-693F1846EA38}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadrotorDesigner.Workspace", "QuadrotorDesigner.Studio\QuadrotorDesigner.Workspace.csproj", "{29D1F497-79E8-4BB3-830E-693F1846EA38}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkUI", "DarkUI\DarkUI.csproj", "{F19472F5-8C44-4C51-A8A0-B9DE5F555255}"
 EndProject
@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastColoredTextBox", "FastC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fastJSON", "fastJSON\fastJSON.csproj", "{207E91B1-C9F8-4913-88E1-3549EF5F3273}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadrotorDesigner.Model", "QuadrotorDesigner.Model\QuadrotorDesigner.Model.csproj", "{59536D14-F5B2-434F-B9D3-579C308B0B06}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadrotorDesigner.Components", "QuadrotorDesigner.Model\QuadrotorDesigner.Components.csproj", "{59536D14-F5B2-434F-B9D3-579C308B0B06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadrotorDesigner.Utils", "QuadrotorDesigner.Utils\QuadrotorDesigner.Utils.csproj", "{BE188491-2C90-4CA8-B824-40B4D6A5CE08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{59536D14-F5B2-434F-B9D3-579C308B0B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59536D14-F5B2-434F-B9D3-579C308B0B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59536D14-F5B2-434F-B9D3-579C308B0B06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE188491-2C90-4CA8-B824-40B4D6A5CE08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE188491-2C90-4CA8-B824-40B4D6A5CE08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE188491-2C90-4CA8-B824-40B4D6A5CE08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE188491-2C90-4CA8-B824-40B4D6A5CE08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuadrotorDesigner.Studio.UserInterface
+namespace QuadrotorDesigner.Workspace.UserInterface
 {
     public partial class FromLoad : Form
     {

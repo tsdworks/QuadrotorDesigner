@@ -1,0 +1,6 @@
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\Program\QuadrotorDesigner.Components.dll
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\Program\QuadrotorDesigner.Components.pdb
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Model\obj\Debug\QuadrotorDesigner.Components.csproj.CoreCompileInputs.cache
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Model\obj\Debug\QuadrotorDesigner.Components.dll
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Model\obj\Debug\QuadrotorDesigner.Components.pdb
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Model\obj\Debug\QuadrotorDesigner.Components.csprojAssemblyReference.cache

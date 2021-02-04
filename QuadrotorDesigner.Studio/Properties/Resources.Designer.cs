@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QuadrotorDesigner.Studio.Properties {
+namespace QuadrotorDesigner.Workspace.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace QuadrotorDesigner.Studio.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("QuadrotorDesigner.Studio.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("QuadrotorDesigner.Workspace.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,15 @@ namespace QuadrotorDesigner.Studio.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 \Models\Assembly\ 的本地化字符串。
+        /// </summary>
+        internal static string AssemblyPath {
+            get {
+                return ResourceManager.GetString("AssemblyPath", resourceCulture);
             }
         }
         
@@ -159,6 +168,15 @@ namespace QuadrotorDesigner.Studio.Properties {
         }
         
         /// <summary>
+        ///   查找类似 .assembly 的本地化字符串。
+        /// </summary>
+        internal static string DesignFileExtName {
+            get {
+                return ResourceManager.GetString("DesignFileExtName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 \Models\Device\ 的本地化字符串。
         /// </summary>
         internal static string DeviceModelPath {
@@ -256,11 +274,20 @@ namespace QuadrotorDesigner.Studio.Properties {
         }
         
         /// <summary>
-        ///   查找类似 3 的本地化字符串。
+        ///   查找类似 2 的本地化字符串。
         /// </summary>
         internal static string LoadSplashDelay {
             get {
                 return ResourceManager.GetString("LoadSplashDelay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 .model 的本地化字符串。
+        /// </summary>
+        internal static string ModelFileExtName {
+            get {
+                return ResourceManager.GetString("ModelFileExtName", resourceCulture);
             }
         }
         
@@ -290,6 +317,15 @@ namespace QuadrotorDesigner.Studio.Properties {
             get {
                 object obj = ResourceManager.GetObject("paste_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 {0}.jpg|{0}.png|{0}.bmp 的本地化字符串。
+        /// </summary>
+        internal static string PreviewImageFileName {
+            get {
+                return ResourceManager.GetString("PreviewImageFileName", resourceCulture);
             }
         }
         
@@ -391,20 +427,29 @@ namespace QuadrotorDesigner.Studio.Properties {
         }
         
         /// <summary>
-        ///   查找类似 {0}* - Quadrotor Designer 的本地化字符串。
+        ///   查找类似 | 的本地化字符串。
         /// </summary>
-        internal static string TitleFileEdited {
+        internal static string SplitChar {
             get {
-                return ResourceManager.GetString("TitleFileEdited", resourceCulture);
+                return ResourceManager.GetString("SplitChar", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   查找类似 {0} - Quadrotor Designer 的本地化字符串。
+        ///   查找类似 _template 的本地化字符串。
         /// </summary>
-        internal static string TitleFileOpened {
+        internal static string TemplateFileName {
             get {
-                return ResourceManager.GetString("TitleFileOpened", resourceCulture);
+                return ResourceManager.GetString("TemplateFileName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 [R/W] 的本地化字符串。
+        /// </summary>
+        internal static string TitleEditable {
+            get {
+                return ResourceManager.GetString("TitleEditable", resourceCulture);
             }
         }
         
@@ -414,6 +459,15 @@ namespace QuadrotorDesigner.Studio.Properties {
         internal static string TitleNormal {
             get {
                 return ResourceManager.GetString("TitleNormal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 [R] 的本地化字符串。
+        /// </summary>
+        internal static string TitleReadonly {
+            get {
+                return ResourceManager.GetString("TitleReadonly", resourceCulture);
             }
         }
         

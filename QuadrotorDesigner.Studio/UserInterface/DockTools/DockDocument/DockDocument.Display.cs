@@ -12,7 +12,7 @@ using DarkUI.Controls;
 using DarkUI.Docking;
 using DarkUI.Forms;
 
-namespace QuadrotorDesigner.Studio.UserInterface.DockTools
+namespace QuadrotorDesigner.Workspace.UserInterface.DockTools
 {
     public partial class DockDocument : DarkDocument
     {

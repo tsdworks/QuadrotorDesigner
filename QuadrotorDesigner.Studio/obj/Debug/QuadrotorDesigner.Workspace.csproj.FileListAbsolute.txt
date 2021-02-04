@@ -1,0 +1,16 @@
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\Program\QuadrotorDesigner.Workspace.exe.config
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\Program\QuadrotorDesigner.Workspace.exe
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\Program\QuadrotorDesigner.Workspace.pdb
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Studio\obj\Debug\QuadrotorDesigner.Workspace.csprojAssemblyReference.cache
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Studio\obj\Debug\QuadrotorDesigner.Workspace.Properties.Resources.resources
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Studio\obj\Debug\QuadrotorDesigner.Workspace.UserInterface.DockTools.DockComponents.resources
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Studio\obj\Debug\QuadrotorDesigner.Workspace.UserInterface.DockTools.DockDocument.resources
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Studio\obj\Debug\QuadrotorDesigner.Workspace.UserInterface.DockTools.DockOutput.resources
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Studio\obj\Debug\QuadrotorDesigner.Workspace.UserInterface.DockTools.DockProperties.resources
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Studio\obj\Debug\QuadrotorDesigner.Workspace.UserInterface.FromLoad.resources
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Studio\obj\Debug\QuadrotorDesigner.Workspace.UserInterface.FormMain.resources
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Studio\obj\Debug\QuadrotorDesigner.Workspace.csproj.GenerateResource.cache
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Studio\obj\Debug\QuadrotorDesigner.Workspace.csproj.CoreCompileInputs.cache
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Studio\obj\Debug\QuadrotorDesigner.Workspace.csproj.CopyComplete
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Studio\obj\Debug\QuadrotorDesigner.Workspace.exe
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Studio\obj\Debug\QuadrotorDesigner.Workspace.pdb

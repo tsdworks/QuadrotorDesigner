@@ -12,10 +12,10 @@ using DarkUI;
 using DarkUI.Docking;
 using DarkUI.Forms;
 using DarkUI.Win32;
-using QuadrotorDesigner.Studio.IO;
-using QuadrotorDesigner.Studio.Properties;
+using QuadrotorDesigner.Utils.IOStream;
+using QuadrotorDesigner.Workspace.Properties;
 
-namespace QuadrotorDesigner.Studio.UserInterface
+namespace QuadrotorDesigner.Workspace.UserInterface
 {
     public partial class FormMain : DarkForm
     {
@@ -26,34 +26,6 @@ namespace QuadrotorDesigner.Studio.UserInterface
         private DockTools.DockComponents dockToolComponents;
         private DockTools.DockProperties dockToolProperties;
         private DockTools.DockOutput dockToolOutput;
-
-        private DarkDockContent DisplayGetContentBySerializationKey(string serializationKey)
-        {
-            foreach (var dockWindow in dockToolsList)
-            {
-                if (dockWindow.SerializationKey == serializationKey)
-                {
-                    return dockWindow;
-                }
-            }
-
-            return null;
-        }
-
-        private void DisplayDeserializeDockPanel(string fileName)
-        {
-            if (File.Exists(fileName))
-            {
-                var dockState = FStream.SerializerHelper.Deserialize<DockPanelState>(fileName);
-                dockPanelMain.RestoreDockPanelState(dockState, DisplayGetContentBySerializationKey);
-            }
-        }
-
-        private void DisplaySerializeDockPanel(string fileName)
-        {
-            var dockState = dockPanelMain.GetDockPanelState();
-            FStream.SerializerHelper.Serialize(dockState, fileName);
-        }
 
         private void DisplayInitializeDockPanel()
         {
@@ -74,16 +46,9 @@ namespace QuadrotorDesigner.Studio.UserInterface
             dockToolsList.Add(dockToolProperties);
             dockToolsList.Add(dockToolOutput);
 
-            if (File.Exists(FStream.CombinePath(Application.StartupPath, Resources.DockConfigFile, false)))
+            foreach (var dockWindow in dockToolsList)
             {
-                DisplayDeserializeDockPanel(FStream.CombinePath(Application.StartupPath, Resources.DockConfigFile, false));
-            }
-            else
-            {
-                foreach(var dockWindow in dockToolsList)
-                {
-                    dockPanelMain.AddContent(dockWindow);
-                }
+                dockPanelMain.AddContent(dockWindow);
             }
 
             DisplaySetupMenu();

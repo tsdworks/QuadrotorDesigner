@@ -1,5 +1,5 @@
 ﻿
-namespace QuadrotorDesigner.Studio.UserInterface.DockTools
+namespace QuadrotorDesigner.Workspace.UserInterface.DockTools
 {
     partial class DockOutput
     {
@@ -48,7 +48,7 @@ namespace QuadrotorDesigner.Studio.UserInterface.DockTools
             this.DefaultDockArea = DarkUI.Docking.DarkDockArea.Bottom;
             this.DockText = "Output";
             this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Icon = global::QuadrotorDesigner.Studio.Properties.Resources.console_docking_icon;
+            this.Icon = global::QuadrotorDesigner.Workspace.Properties.Resources.console_docking_icon;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "DockOutput";
             this.SerializationKey = "DockOutput";

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using DarkUI.Controls;
 using DarkUI.Docking;
 
-namespace QuadrotorDesigner.Studio.UserInterface.DockTools
+namespace QuadrotorDesigner.Workspace.UserInterface.DockTools
 {
     public partial class DockProperties : DarkToolWindow
     {

@@ -7,9 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QuadrotorDesigner.Studio.Properties;
+using QuadrotorDesigner.Workspace.Properties;
+using QuadrotorDesigner.Utils.IOStream;
+using QuadrotorDesigner.Utils.Notation;
 
-namespace QuadrotorDesigner.Studio.UserInterface
+namespace QuadrotorDesigner.Workspace.UserInterface
 {
     public partial class FromLoad : Form
     {

@@ -1,5 +1,5 @@
 ﻿
-namespace QuadrotorDesigner.Studio.UserInterface.DockTools
+namespace QuadrotorDesigner.Workspace.UserInterface.DockTools
 {
     partial class DockDocument
     {

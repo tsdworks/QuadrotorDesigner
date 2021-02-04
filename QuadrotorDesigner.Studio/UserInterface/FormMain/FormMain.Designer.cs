@@ -1,5 +1,5 @@
 ﻿
-namespace QuadrotorDesigner.Studio.UserInterface
+namespace QuadrotorDesigner.Workspace.UserInterface
 {
     partial class FormMain
     {
@@ -137,7 +137,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             this.menuItemNewDesign,
             this.menuItemNewModel});
             this.menuItemNew.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemNew.Image = global::QuadrotorDesigner.Studio.Properties.Resources.new_icon;
+            this.menuItemNew.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.new_icon;
             this.menuItemNew.Name = "menuItemNew";
             this.menuItemNew.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.menuItemNew.Size = new System.Drawing.Size(199, 22);
@@ -147,7 +147,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemNewDesign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemNewDesign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemNewDesign.Image = global::QuadrotorDesigner.Studio.Properties.Resources.design_icon;
+            this.menuItemNewDesign.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.design_icon;
             this.menuItemNewDesign.Name = "menuItemNewDesign";
             this.menuItemNewDesign.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.N)));
@@ -158,7 +158,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemNewModel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemNewModel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemNewModel.Image = global::QuadrotorDesigner.Studio.Properties.Resources.component_file;
+            this.menuItemNewModel.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.component_file;
             this.menuItemNewModel.Name = "menuItemNewModel";
             this.menuItemNewModel.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.M)));
@@ -169,7 +169,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemOpen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemOpen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemOpen.Image = global::QuadrotorDesigner.Studio.Properties.Resources.folder_open;
+            this.menuItemOpen.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.folder_open;
             this.menuItemOpen.Name = "menuItemOpen";
             this.menuItemOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.menuItemOpen.Size = new System.Drawing.Size(199, 22);
@@ -187,7 +187,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemSave.Image = global::QuadrotorDesigner.Studio.Properties.Resources.save_icon;
+            this.menuItemSave.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.save_icon;
             this.menuItemSave.Name = "menuItemSave";
             this.menuItemSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.menuItemSave.Size = new System.Drawing.Size(199, 22);
@@ -205,7 +205,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemSaveAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemSaveAll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemSaveAll.Image = global::QuadrotorDesigner.Studio.Properties.Resources.save_all_icon;
+            this.menuItemSaveAll.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.save_all_icon;
             this.menuItemSaveAll.Name = "menuItemSaveAll";
             this.menuItemSaveAll.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.S)));
@@ -224,7 +224,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemExit.Image = global::QuadrotorDesigner.Studio.Properties.Resources.exit_icon;
+            this.menuItemExit.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.exit_icon;
             this.menuItemExit.Name = "menuItemExit";
             this.menuItemExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.menuItemExit.Size = new System.Drawing.Size(199, 22);
@@ -256,7 +256,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemGotoLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemGotoLine.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemGotoLine.Image = global::QuadrotorDesigner.Studio.Properties.Resources.goto_line_icon;
+            this.menuItemGotoLine.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.goto_line_icon;
             this.menuItemGotoLine.Name = "menuItemGotoLine";
             this.menuItemGotoLine.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
             this.menuItemGotoLine.Size = new System.Drawing.Size(189, 24);
@@ -274,7 +274,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemFind.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemFind.Image = global::QuadrotorDesigner.Studio.Properties.Resources.find_icon;
+            this.menuItemFind.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.find_icon;
             this.menuItemFind.Name = "menuItemFind";
             this.menuItemFind.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.menuItemFind.Size = new System.Drawing.Size(189, 24);
@@ -284,7 +284,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemReplace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemReplace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemReplace.Image = global::QuadrotorDesigner.Studio.Properties.Resources.replace_icon;
+            this.menuItemReplace.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.replace_icon;
             this.menuItemReplace.Name = "menuItemReplace";
             this.menuItemReplace.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
             this.menuItemReplace.Size = new System.Drawing.Size(189, 24);
@@ -302,7 +302,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemUndo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemUndo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemUndo.Image = global::QuadrotorDesigner.Studio.Properties.Resources.undo_icon;
+            this.menuItemUndo.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.undo_icon;
             this.menuItemUndo.Name = "menuItemUndo";
             this.menuItemUndo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
             this.menuItemUndo.Size = new System.Drawing.Size(189, 24);
@@ -312,7 +312,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemRedo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemRedo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemRedo.Image = global::QuadrotorDesigner.Studio.Properties.Resources.redo_icon;
+            this.menuItemRedo.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.redo_icon;
             this.menuItemRedo.Name = "menuItemRedo";
             this.menuItemRedo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
             this.menuItemRedo.Size = new System.Drawing.Size(189, 24);
@@ -330,7 +330,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemCut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemCut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemCut.Image = global::QuadrotorDesigner.Studio.Properties.Resources.cut_icon;
+            this.menuItemCut.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.cut_icon;
             this.menuItemCut.Name = "menuItemCut";
             this.menuItemCut.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
             this.menuItemCut.Size = new System.Drawing.Size(189, 24);
@@ -340,7 +340,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemCopy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemCopy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemCopy.Image = global::QuadrotorDesigner.Studio.Properties.Resources.copy_icon;
+            this.menuItemCopy.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.copy_icon;
             this.menuItemCopy.Name = "menuItemCopy";
             this.menuItemCopy.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
             this.menuItemCopy.Size = new System.Drawing.Size(189, 24);
@@ -350,7 +350,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemPaste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemPaste.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemPaste.Image = global::QuadrotorDesigner.Studio.Properties.Resources.paste_icon;
+            this.menuItemPaste.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.paste_icon;
             this.menuItemPaste.Name = "menuItemPaste";
             this.menuItemPaste.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
             this.menuItemPaste.Size = new System.Drawing.Size(189, 24);
@@ -360,7 +360,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemDelete.Image = global::QuadrotorDesigner.Studio.Properties.Resources.delete_icon;
+            this.menuItemDelete.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.delete_icon;
             this.menuItemDelete.Name = "menuItemDelete";
             this.menuItemDelete.ShortcutKeys = System.Windows.Forms.Keys.Delete;
             this.menuItemDelete.Size = new System.Drawing.Size(189, 24);
@@ -381,7 +381,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemRunAnalysis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemRunAnalysis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemRunAnalysis.Image = global::QuadrotorDesigner.Studio.Properties.Resources.run_icon;
+            this.menuItemRunAnalysis.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.run_icon;
             this.menuItemRunAnalysis.Name = "menuItemRunAnalysis";
             this.menuItemRunAnalysis.ShortcutKeys = System.Windows.Forms.Keys.F5;
             this.menuItemRunAnalysis.Size = new System.Drawing.Size(179, 24);
@@ -404,7 +404,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemComponentsExplorer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemComponentsExplorer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemComponentsExplorer.Image = global::QuadrotorDesigner.Studio.Properties.Resources.component_docking_icon;
+            this.menuItemComponentsExplorer.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.component_docking_icon;
             this.menuItemComponentsExplorer.Name = "menuItemComponentsExplorer";
             this.menuItemComponentsExplorer.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.C)));
@@ -416,7 +416,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemProperties.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemProperties.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemProperties.Image = global::QuadrotorDesigner.Studio.Properties.Resources.properties_docking_icon;
+            this.menuItemProperties.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.properties_docking_icon;
             this.menuItemProperties.Name = "menuItemProperties";
             this.menuItemProperties.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.P)));
@@ -428,7 +428,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemOutput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemOutput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemOutput.Image = global::QuadrotorDesigner.Studio.Properties.Resources.console_docking_icon;
+            this.menuItemOutput.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.console_docking_icon;
             this.menuItemOutput.Name = "menuItemOutput";
             this.menuItemOutput.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.R)));
@@ -453,7 +453,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemGithub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemGithub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemGithub.Image = global::QuadrotorDesigner.Studio.Properties.Resources.web_page_icon;
+            this.menuItemGithub.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.web_page_icon;
             this.menuItemGithub.Name = "menuItemGithub";
             this.menuItemGithub.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.G)));
@@ -472,7 +472,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.menuItemAbout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.menuItemAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.menuItemAbout.Image = global::QuadrotorDesigner.Studio.Properties.Resources.info_icon;
+            this.menuItemAbout.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.info_icon;
             this.menuItemAbout.Name = "menuItemAbout";
             this.menuItemAbout.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
             this.menuItemAbout.Size = new System.Drawing.Size(257, 24);
@@ -516,7 +516,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             this.subMenuItemNewDesign,
             this.subMenuItemNewModel});
             this.buttonNew.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.buttonNew.Image = global::QuadrotorDesigner.Studio.Properties.Resources.new_icon;
+            this.buttonNew.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.new_icon;
             this.buttonNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.buttonNew.Name = "buttonNew";
             this.buttonNew.Size = new System.Drawing.Size(29, 25);
@@ -526,7 +526,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.subMenuItemNewDesign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.subMenuItemNewDesign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.subMenuItemNewDesign.Image = global::QuadrotorDesigner.Studio.Properties.Resources.design_icon;
+            this.subMenuItemNewDesign.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.design_icon;
             this.subMenuItemNewDesign.Name = "subMenuItemNewDesign";
             this.subMenuItemNewDesign.Size = new System.Drawing.Size(186, 22);
             this.subMenuItemNewDesign.Text = "&Drone Design";
@@ -535,7 +535,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             // 
             this.subMenuItemNewModel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.subMenuItemNewModel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.subMenuItemNewModel.Image = global::QuadrotorDesigner.Studio.Properties.Resources.component_file;
+            this.subMenuItemNewModel.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.component_file;
             this.subMenuItemNewModel.Name = "subMenuItemNewModel";
             this.subMenuItemNewModel.Size = new System.Drawing.Size(186, 22);
             this.subMenuItemNewModel.Text = "&Component Model";
@@ -545,7 +545,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             this.buttonSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.buttonSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.buttonSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.buttonSave.Image = global::QuadrotorDesigner.Studio.Properties.Resources.save_icon;
+            this.buttonSave.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.save_icon;
             this.buttonSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(23, 25);
@@ -556,7 +556,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             this.buttonSaveAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.buttonSaveAll.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.buttonSaveAll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.buttonSaveAll.Image = global::QuadrotorDesigner.Studio.Properties.Resources.save_all_icon;
+            this.buttonSaveAll.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.save_all_icon;
             this.buttonSaveAll.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.buttonSaveAll.Name = "buttonSaveAll";
             this.buttonSaveAll.Size = new System.Drawing.Size(23, 25);
@@ -575,7 +575,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             this.buttonCut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.buttonCut.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.buttonCut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.buttonCut.Image = global::QuadrotorDesigner.Studio.Properties.Resources.cut_icon;
+            this.buttonCut.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.cut_icon;
             this.buttonCut.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.buttonCut.Name = "buttonCut";
             this.buttonCut.Size = new System.Drawing.Size(23, 25);
@@ -586,7 +586,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             this.buttonCopy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.buttonCopy.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.buttonCopy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.buttonCopy.Image = global::QuadrotorDesigner.Studio.Properties.Resources.copy_icon;
+            this.buttonCopy.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.copy_icon;
             this.buttonCopy.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.buttonCopy.Name = "buttonCopy";
             this.buttonCopy.Size = new System.Drawing.Size(23, 25);
@@ -597,7 +597,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             this.buttonPaste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.buttonPaste.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.buttonPaste.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.buttonPaste.Image = global::QuadrotorDesigner.Studio.Properties.Resources.paste_icon;
+            this.buttonPaste.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.paste_icon;
             this.buttonPaste.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.buttonPaste.Name = "buttonPaste";
             this.buttonPaste.Size = new System.Drawing.Size(23, 25);
@@ -616,7 +616,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             this.buttonUndo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.buttonUndo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.buttonUndo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.buttonUndo.Image = global::QuadrotorDesigner.Studio.Properties.Resources.undo_icon;
+            this.buttonUndo.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.undo_icon;
             this.buttonUndo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.buttonUndo.Name = "buttonUndo";
             this.buttonUndo.Size = new System.Drawing.Size(23, 25);
@@ -627,7 +627,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             this.buttonRedo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.buttonRedo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.buttonRedo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.buttonRedo.Image = global::QuadrotorDesigner.Studio.Properties.Resources.redo_icon;
+            this.buttonRedo.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.redo_icon;
             this.buttonRedo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.buttonRedo.Name = "buttonRedo";
             this.buttonRedo.Size = new System.Drawing.Size(23, 25);
@@ -646,7 +646,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             this.buttonRunAnalysis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.buttonRunAnalysis.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.buttonRunAnalysis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.buttonRunAnalysis.Image = global::QuadrotorDesigner.Studio.Properties.Resources.run_icon;
+            this.buttonRunAnalysis.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.run_icon;
             this.buttonRunAnalysis.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.buttonRunAnalysis.Name = "buttonRunAnalysis";
             this.buttonRunAnalysis.Size = new System.Drawing.Size(23, 25);
@@ -665,7 +665,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             this.buttonComponentsExplorer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.buttonComponentsExplorer.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.buttonComponentsExplorer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.buttonComponentsExplorer.Image = global::QuadrotorDesigner.Studio.Properties.Resources.component_docking_icon;
+            this.buttonComponentsExplorer.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.component_docking_icon;
             this.buttonComponentsExplorer.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.buttonComponentsExplorer.Name = "buttonComponentsExplorer";
             this.buttonComponentsExplorer.Size = new System.Drawing.Size(23, 25);
@@ -677,7 +677,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             this.buttonProperties.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.buttonProperties.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.buttonProperties.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.buttonProperties.Image = global::QuadrotorDesigner.Studio.Properties.Resources.properties_docking_icon;
+            this.buttonProperties.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.properties_docking_icon;
             this.buttonProperties.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.buttonProperties.Name = "buttonProperties";
             this.buttonProperties.Size = new System.Drawing.Size(23, 25);
@@ -689,7 +689,7 @@ namespace QuadrotorDesigner.Studio.UserInterface
             this.buttonOutput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.buttonOutput.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.buttonOutput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.buttonOutput.Image = global::QuadrotorDesigner.Studio.Properties.Resources.console_docking_icon;
+            this.buttonOutput.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.console_docking_icon;
             this.buttonOutput.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.buttonOutput.Name = "buttonOutput";
             this.buttonOutput.Size = new System.Drawing.Size(23, 25);

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using DarkUI;
 using DarkUI.Forms;
 
-namespace QuadrotorDesigner.Studio.UserInterface
+namespace QuadrotorDesigner.Workspace.UserInterface
 {
     public partial class FormMain : DarkForm
     {
