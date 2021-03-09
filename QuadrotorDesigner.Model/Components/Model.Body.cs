@@ -13,6 +13,8 @@ namespace QuadrotorDesigner.Components
         {
             public double MaxPropellerPitch;
 
+            public int RotorNumber;
+
             // space to attach devices under the body
             public Dimension BottomAreaSpace;
 

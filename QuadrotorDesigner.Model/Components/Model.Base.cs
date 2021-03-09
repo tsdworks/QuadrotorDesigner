@@ -25,6 +25,8 @@ namespace QuadrotorDesigner.Components
                 Width = width;
                 Height = height;
             }
+
+            public Dimension() { }
         };
 
         // common voltage-performance curve notation
@@ -90,19 +92,26 @@ namespace QuadrotorDesigner.Components
             public double Weight;
             public string PreviewImageFileName;
 
-            public Base(ModelTypeList modeltype = ModelTypeList.None, string displayname = "", string manufacturer = "", string model = "",
-                double unitprice = 0, double reliability = 0, double length = 0, double width = 0,
-                double height = 0, double weight = 0, string previewimagefilename = "")
+            public Base(ModelTypeList model_type = ModelTypeList.None, string display_name = "", string manufacturer = "", string model = "",
+                double unit_price = 0, double reliability = 0, double length = 0, double width = 0,
+                double height = 0, double weight = 0, string preview_image_filename = "")
             {
-                ModelType = modeltype;
-                DisplayName = displayname;
+                ModelType = model_type;
+                DisplayName = display_name;
                 Manufacturer = manufacturer;
                 Model = model;
-                UnitPrice = unitprice;
+                UnitPrice = unit_price;
                 Reliability = reliability;
+
                 OutlineDimension = new Dimension(length, width, height);
+
                 Weight = weight;
-                PreviewImageFileName = previewimagefilename;
+                PreviewImageFileName = preview_image_filename;
+            }
+
+            public Base()
+            {
+                OutlineDimension = new Dimension(0, 0, 0);
             }
         };
     }

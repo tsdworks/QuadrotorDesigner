@@ -14,6 +14,19 @@ namespace QuadrotorDesigner.Workspace.UserInterface
 {
     public partial class FormMain : DarkForm
     {
+        private void ActionSelectorDoubleClicked(DocumentManager.ComponentDocument currentDocument)
+        {
+            dockPanelMain.AddContent(currentDocument.DockDocument);
+        }
 
+        private void ActionSelectorRightClicked(DocumentManager.ComponentDocument currentDocument)
+        {
+            
+        }
+
+        private void ActionSelectorNodeChanged(DocumentManager.ComponentDocument currentDocument)
+        {
+            dockToolProperties.DisplayShowDetail(currentDocument.JSONText);
+        }
     }
 }

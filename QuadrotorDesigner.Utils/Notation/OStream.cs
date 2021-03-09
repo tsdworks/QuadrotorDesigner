@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace QuadrotorDesigner.Utils.Notation
 {
@@ -35,7 +36,7 @@ namespace QuadrotorDesigner.Utils.Notation
             {
                 retValue = JSON.ToObject<T>(stream);
             }
-            catch (Exception) { };
+            catch (Exception ex) { MessageBox.Show(ex.Message); };
 
             return retValue;
         }

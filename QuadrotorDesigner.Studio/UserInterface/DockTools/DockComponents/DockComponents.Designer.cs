@@ -62,6 +62,6 @@ namespace QuadrotorDesigner.Workspace.UserInterface.DockTools
 
         #endregion
 
-        private DarkUI.Controls.DarkTreeView treeComponents;
+        public DarkUI.Controls.DarkTreeView treeComponents;
     }
 }

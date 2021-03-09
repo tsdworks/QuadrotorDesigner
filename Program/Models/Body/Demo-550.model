@@ -1,0 +1,31 @@
+{
+   "MaxPropellerPitch" : 390,
+   "RotorNumber" : 4,
+   "BottomAreaSpace" : {
+      "Length" : 160,
+      "Width" : 160,
+      "Height" : 36
+   },
+   "CentralBoxDimension" : {
+      "Length" : 160,
+      "Width" : 160,
+      "Height" : 36
+   },
+   "MaxLoadWeight" : 800,
+   "AdaptedMotorModels" : [
+      "3500"
+   ],
+   "ModelType" : "Body",
+   "DisplayName" : "Demo 550",
+   "Manufacturer" : "Demo",
+   "Model" : "550",
+   "UnitPrice" : 60,
+   "Reliability" : 85,
+   "OutlineDimension" : {
+      "Length" : 550,
+      "Width" : 550,
+      "Height" : 300
+   },
+   "Weight" : 630,
+   "PreviewImageFileName" : ""
+}

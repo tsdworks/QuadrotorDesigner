@@ -21,10 +21,11 @@ namespace QuadrotorDesigner.Workspace.UserInterface.DockTools
             InitializeComponent();
         }
 
-        public DockDocument(string text, Image icon)
+        public DockDocument(string text, string content, Image icon)
             : this()
         {
             DockText = text;
+            textboxEditor.Text = content;
             Icon = icon;
         }
     }

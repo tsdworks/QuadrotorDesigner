@@ -23,6 +23,8 @@ namespace QuadrotorDesigner.Workspace.UserInterface
         private void FromLoad_Load(object sender, EventArgs e)
         {
             DisplayStartTimer();
+
+            ActionLoadModelDatabase();
         }
 
         private int CounterLoader = 0;

@@ -1,0 +1,33 @@
+{
+    "MaxPropellerPitch" : 0,
+    "RotorNumber" : 0,
+    "BottomAreaSpace" : {
+       "Length" : 0,
+       "Width" : 0,
+       "Height" : 0
+    },
+    "CentralBoxDimension" : {
+       "Length" : 0,
+       "Width" : 0,
+       "Height" : 0
+    },
+    "MaxLoadWeight" : 0,
+    "AdaptedMotorModels" : [
+       
+    ],
+    "ModelType" : "",
+    "DisplayName" : "",
+    "Manufacturer" : "",
+    "Model" : "",
+    "UnitPrice" : 0,
+    "Reliability" : 0,
+    "OutlineDimension" : {
+       "Length" : 0,
+       "Width" : 0,
+       "Height" : 0
+    },
+    "Weight" : 0,
+    "PreviewImageFileName" : ""
+ }
+
+ 

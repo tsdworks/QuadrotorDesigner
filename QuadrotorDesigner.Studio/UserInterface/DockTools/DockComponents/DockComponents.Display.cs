@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DarkUI.Controls;
 using DarkUI.Docking;
+using QuadrotorDesigner.Workspace.Properties;
 
 namespace QuadrotorDesigner.Workspace.UserInterface.DockTools
 {

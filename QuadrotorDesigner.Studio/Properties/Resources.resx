@@ -253,4 +253,7 @@
   <data name="TitleReadonly" xml:space="preserve">
     <value>[R]</value>
   </data>
+  <data name="ComponentsTypeList" xml:space="preserve">
+    <value>Body|Motor|ESC|Battery|Propeller|Device|RC|Flight Controller</value>
+  </data>
 </root>

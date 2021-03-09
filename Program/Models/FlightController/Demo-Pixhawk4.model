@@ -1,0 +1,24 @@
+{
+   "MCUFrequency" : 216,
+   "IO" : {
+      "GPIO" : 16,
+      "USART" : 5,
+      "SPI" : 3,
+      "I2C" : 4,
+      "Ethernet" : 0
+   },
+   "ModelType" : "FlightController",
+   "DisplayName" : "Demo Pixhawk4",
+   "Manufacturer" : "Demo",
+   "Model" : "Pixhawk4",
+   "UnitPrice" : 100,
+   "Reliability" : 90,
+   "OutlineDimension" : {
+      "Length" : 0,
+      "Width" : 0,
+      "Height" : 0
+   },
+   "Weight" : 158,
+   "PreviewImageFileName" : "\\Models\\FlightController\\Demo-Pixhawk4.jpg"
+}
+

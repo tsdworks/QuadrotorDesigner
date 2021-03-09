@@ -49,7 +49,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface.DockTools
         '\'',
         '\''};
             this.textboxEditor.AutoIndentCharsPatterns = "\r\n^\\s*[\\w\\.]+(\\s\\w+)?\\s*(?<range>=)\\s*(?<range>[^;]+);\r\n";
-            this.textboxEditor.AutoScrollMinSize = new System.Drawing.Size(387, 3444);
+            this.textboxEditor.AutoScrollMinSize = new System.Drawing.Size(27, 14);
             this.textboxEditor.BackBrush = null;
             this.textboxEditor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(53)))));
             this.textboxEditor.BookmarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(110)))), ((int)(((byte)(175)))));
@@ -76,7 +76,6 @@ namespace QuadrotorDesigner.Workspace.UserInterface.DockTools
             this.textboxEditor.ServiceColors = ((FastColoredTextBoxNS.ServiceColors)(resources.GetObject("textboxEditor.ServiceColors")));
             this.textboxEditor.Size = new System.Drawing.Size(659, 431);
             this.textboxEditor.TabIndex = 4;
-            this.textboxEditor.Text = resources.GetString("textboxEditor.Text");
             this.textboxEditor.TextAreaBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(53)))));
             this.textboxEditor.Zoom = 100;
             // 

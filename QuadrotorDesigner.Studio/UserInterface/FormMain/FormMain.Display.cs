@@ -27,6 +27,9 @@ namespace QuadrotorDesigner.Workspace.UserInterface
         private DockTools.DockProperties dockToolProperties;
         private DockTools.DockOutput dockToolOutput;
 
+        // tree view manager
+        private ComponentTreeView.TreeViewManager treeViewManager;
+
         private void DisplayInitializeDockPanel()
         {
             // Add the dock panel message filter to filter through for dock panel splitter
@@ -52,8 +55,16 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             }
 
             DisplaySetupMenu();
+        }
 
-            dockPanelMain.AddContent(new DockTools.DockDocument("Document 1", Resources.component_file));
+        private void DisplaySetupBinding()
+        {
+            // component selector
+            treeViewManager = new ComponentTreeView.TreeViewManager(dockToolComponents.treeComponents);
+            treeViewManager.Refresh(DocumentManager.LocalModelDocuments);
+            treeViewManager.ItemDoubleClicked += ActionSelectorDoubleClicked;
+            treeViewManager.ItemRightClicked += ActionSelectorRightClicked;
+            treeViewManager.ItemNodeSelected += ActionSelectorNodeChanged;
         }
 
         private void DisplayToggleDockWindow(DarkToolWindow dockWindow)

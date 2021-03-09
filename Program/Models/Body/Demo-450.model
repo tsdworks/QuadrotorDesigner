@@ -1,0 +1,31 @@
+{
+   "MaxPropellerPitch" : 318,
+   "RotorNumber" : 4,
+   "BottomAreaSpace" : {
+      "Length" : 100,
+      "Width" : 100,
+      "Height" : 180
+   },
+   "CentralBoxDimension" : {
+      "Length" : 100,
+      "Width" : 100,
+      "Height" : 40
+   },
+   "MaxLoadWeight" : 500,
+   "AdaptedMotorModels" : [
+      "2212"
+   ],
+   "ModelType" : "Body",
+   "DisplayName" : "Demo 450",
+   "Manufacturer" : "Demo",
+   "Model" : "450",
+   "UnitPrice" : 50,
+   "Reliability" : 90,
+   "OutlineDimension" : {
+      "Length" : 450,
+      "Width" : 450,
+      "Height" : 250
+   },
+   "Weight" : 520,
+   "PreviewImageFileName" : ""
+}

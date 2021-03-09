@@ -1,0 +1,8 @@
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\Program\QuadrotorDesigner.DataGenerator.exe.config
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\Program\QuadrotorDesigner.DataGenerator.exe
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\Program\QuadrotorDesigner.DataGenerator.pdb
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.DataGenerator\obj\Debug\QuadrotorDesigner.DataGenerator.csprojAssemblyReference.cache
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.DataGenerator\obj\Debug\QuadrotorDesigner.DataGenerator.csproj.CoreCompileInputs.cache
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.DataGenerator\obj\Debug\QuadrotorDesigner.DataGenerator.exe
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.DataGenerator\obj\Debug\QuadrotorDesigner.DataGenerator.pdb
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.DataGenerator\obj\Debug\QuadrotorDesigner.DataGenerator.csproj.CopyComplete

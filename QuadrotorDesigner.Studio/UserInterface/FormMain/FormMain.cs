@@ -27,8 +27,11 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             // load dock panel
             DisplayInitializeDockPanel();
 
+            // setup binding
+            DisplaySetupBinding();
+
             // log workspace
-            dockToolOutput.LogOutput(DateTime.Now.ToString("G") + " - Workspace Initialized.");
+            dockToolOutput.LogOutput("Workspace Initialized.");
         }
 
         private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
