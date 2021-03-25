@@ -20,12 +20,12 @@ namespace QuadrotorDesigner.Components
 
             public List<string> AdaptedPropellerModels;
 
-            public Dictionary<string, VoltagePerformanceCurve> VoltagePerformanceCurveByPropellers;
+            public Dictionary<string, VoltagePerformanceCurve> VoltagePerformanceCurvesByPropellers;
 
             public Motor() : base()
             {
                 AdaptedPropellerModels = new List<string>();
-                VoltagePerformanceCurveByPropellers = new Dictionary<string, VoltagePerformanceCurve>();
+                VoltagePerformanceCurvesByPropellers = new Dictionary<string, VoltagePerformanceCurve>();
                 ModelType = ModelTypeList.Motor;
             }
         };

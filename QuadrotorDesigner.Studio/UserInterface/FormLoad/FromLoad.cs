@@ -41,7 +41,8 @@ namespace QuadrotorDesigner.Workspace.UserInterface
                 Hide();
 
                 // show workspace
-                (new FormMain()).Show();
+                Program.AppMainForm = new FormMain();
+                Program.AppMainForm.Show();
             }
         }
     }

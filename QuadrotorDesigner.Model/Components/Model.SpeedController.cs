@@ -12,7 +12,7 @@ namespace QuadrotorDesigner.Components
         public class SpeedController : Base
         {
             public double MaxOutputCurrent;
-            public double MaxInputVoltage;
+            public double MaxContinuousCurrent;
 
             public SpeedController() : base()
             {

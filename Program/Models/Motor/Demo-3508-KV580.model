@@ -1,0 +1,220 @@
+{
+   "KVValue" : 580,
+   "Diameter" : 42,
+   "StandbyCurrent" : 0.2,
+   "InternalResistance" : 0.12,
+   "MaxCurrent" : 25,
+   "MaxPower" : 370,
+   "AdaptedPropellerModels" : [
+      "1137",
+      "1240",
+      "1344",
+      "1448",
+   ],
+   "VoltagePerformanceCurvesByPropellers" : {
+      "1137" : {
+         "CurveByVoltage" : [
+            {
+               "Voltage" : 11.1,
+               "CurrentPoints" : [
+                  2.6,
+                  4.1,
+		  6.4,
+		  8.9,
+		  11.4,
+		  14.5
+               ],
+               "ThrustPoints" : [
+                  604,
+                  832,
+                  1062,
+                  1359,
+                  1582,
+                  1834
+               ],
+               "PowerPoints" : [
+                  57.7,
+                  91.0,
+                  142.1,
+                  197.6,
+                  259.7,
+                  321.9
+               ],
+               "EfficiencyPoints" : [
+                  10.464,
+                  9.141,
+                  7.475,
+                  6.878,
+                  6.091,
+		  5.697
+               ]
+            }
+         ]
+      },
+      "1240" : {
+         "CurveByVoltage" : [
+            {
+               "Voltage" : 14.8,
+               "CurrentPoints" : [
+                  1.9,
+                  3.0,
+		  4.3,
+		  6.2,
+		  8.4,
+		  10.3
+               ],
+               "ThrustPoints" : [
+                  371,
+                  517,
+                  670,
+                  845,
+                  1009,
+                  1145
+               ],
+               "PowerPoints" : [
+                  28.1,
+                  44.4,
+                  63.6,
+                  91.8,
+                  124.3,
+                  152.4
+               ],
+               "EfficiencyPoints" : [
+                  13.193,
+                  11.644,
+                  10.528,
+                  9.209,
+                  8.116,
+                  7.511
+               ]
+            }
+         ]
+      },
+      "1344" : {
+         "CurveByVoltage" : [
+            {
+               "Voltage" : 14.8,
+               "CurrentPoints" : [
+                  2.1,
+                  3.4,
+		  5.0,
+		  7.0,
+		  9.5,
+		  11.8
+               ],
+               "ThrustPoints" : [
+                  437,
+                  609,
+                  770,
+                  945,
+                  1145,
+                  1334
+               ],
+               "PowerPoints" : [
+                  31.1,
+                  50.3,
+                  74.0,
+                  103.6,
+                  140.6,
+                  174.6
+               ],
+               "EfficiencyPoints" : [
+                  14.060,
+                  12.103,
+                  10.405,
+                  9.122,
+                  8.144,
+                  7.639
+               ]
+            }
+         ]
+      },
+      "1448" : {
+         "CurveByVoltage" : [
+            {
+               "Voltage" : 11.1,
+               "CurrentPoints" : [
+                  1.7,
+                  3.4,
+                  5.0,
+                  7.0,
+                  9.5,
+                  11.8
+               ],
+               "ThrustPoints" : [
+                  437,
+                  609,
+                  770,
+                  945,
+                  1145,
+                  1334
+               ],
+               "PowerPoints" : [
+                  18.9,
+                  31.1,
+                  47.7,
+                  65.5,
+                  87.7,
+                  106.6
+               ],
+               "EfficiencyPoints" : [
+                  16.958,
+                  14.511,
+                  12.131,
+                  11.070,
+                  9.636,
+                  9.291
+               ]
+            },
+            {
+               "Voltage" : 14.8,
+               "CurrentPoints" : [
+                  3.0,
+                  4.5,
+                  6.4,
+                  9.4,
+                  11.9,
+                  14.8
+               ],
+               "ThrustPoints" : [
+                  557,
+                  748,
+                  919,
+                  1156,
+                  1307,
+                  1498
+               ],
+               "PowerPoints" : [
+                  44.4,
+                  66.6,
+                  94.7,
+                  139.1,
+                  176.1,
+                  219.0
+               ],
+               "EfficiencyPoints" : [
+                  12.545,
+                  11.231,
+                  9.702,
+                  8.309,
+                  7.421,
+                  6.839
+               ]
+            }
+         ]
+      }
+   },
+   "ModelType" : "Motor",
+   "DisplayName" : "Demo 3508 KV580",
+   "Manufacturer" : "Demo",
+   "Model" : "3508",
+   "UnitPrice" : 30,
+   "Reliability" : 90,
+   "OutlineDimension" : {
+      "Length" : 42,
+      "Width" : 42,
+      "Height" : 25.3
+   },
+   "Weight" : 85,
+   "PreviewImageFileName" : null
+}

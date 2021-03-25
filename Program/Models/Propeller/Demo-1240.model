@@ -1,0 +1,15 @@
+{
+   "Diameter" : 300,
+   "ModelType" : "Propeller",
+   "DisplayName" : "Demo 1240",
+   "Manufacturer" : "Demo",
+   "Model" : "1240",
+   "UnitPrice" : 7,
+   "Reliability" : 80,
+   "OutlineDimension" : {
+      "Length" : 300,
+      "Width" : 300,
+      "Height" : 0
+   },
+   "Weight" : 16
+}

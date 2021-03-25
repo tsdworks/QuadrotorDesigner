@@ -1,0 +1,16 @@
+{
+   "MaxOutputCurrent" : 0,
+   "MaxContinuousCurrent" : 0,
+   "ModelType" : "ESC",
+   "DisplayName" : "",
+   "Manufacturer" : "",
+   "Model" : "",
+   "UnitPrice" : 0,
+   "Reliability" : 0,
+   "OutlineDimension" : {
+      "Length" : 0,
+      "Width" : 0,
+      "Height" : 0
+   },
+   "Weight" : 0
+}

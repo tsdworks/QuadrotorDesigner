@@ -1,0 +1,28 @@
+{
+   "IORequests" : {
+      "GPIO" : 0,
+      "USART" : 0,
+      "SPI" : 0,
+      "I2C" : 0,
+      "Ethernet" : 0
+   },
+   "Power" : 1.1,
+   "BodyAttachLocation" : "Bottom",
+   "Parameters" : {
+      "Frequency" : "2.4Ghz",
+      "Remote Control Distance" : "2500m"
+   },
+   "Feature" : "RC Module",
+   "ModelType" : "Device",
+   "DisplayName" : "Demo 9Channel RC",
+   "Manufacturer" : "Demo",
+   "Model" : "9Channel-RC",
+   "UnitPrice" : 100,
+   "Reliability" : 80,
+   "OutlineDimension" : {
+      "Length" : 47,
+      "Width" : 14,
+      "Height" : 25
+   },
+   "Weight" : 12
+}

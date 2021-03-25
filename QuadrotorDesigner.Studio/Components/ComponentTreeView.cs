@@ -7,6 +7,8 @@ using DarkUI.Forms;
 using DarkUI.Controls;
 using QuadrotorDesigner.Workspace.Properties;
 using static QuadrotorDesigner.Workspace.DocumentManager;
+using QuadrotorDesigner.Workspace.UserInterface;
+using System.Windows.Forms;
 
 namespace QuadrotorDesigner.Workspace
 {
@@ -25,6 +27,8 @@ namespace QuadrotorDesigner.Workspace
 
             public DarkTreeView ComponentTreeView;
 
+            static public FormMain This = Program.AppMainForm;
+
             public TreeViewManager(DarkTreeView componentTreeView)
             {
                 ComponentTreeView = componentTreeView;
@@ -39,7 +43,7 @@ namespace QuadrotorDesigner.Workspace
 
                 ComponentTreeView.MouseDown += (_a, _b) =>
                 {
-                    if (_b.Button == System.Windows.Forms.MouseButtons.Right)
+                    if (_b.Button == MouseButtons.Right)
                     {
                         if (ComponentTreeView.SelectedNodes.Count == 1 && componentTreeView.SelectedNodes[0].Tag != null)
                         {
@@ -55,6 +59,8 @@ namespace QuadrotorDesigner.Workspace
                         ItemNodeSelected?.Invoke((ComponentDocument)componentTreeView.SelectedNodes[0].Tag);
                     }
                 };
+
+                ComponentTreeView.ContextMenuStrip = This.contextMenuTreeView;
             }
 
             public void Initialize()
@@ -76,19 +82,25 @@ namespace QuadrotorDesigner.Workspace
                 }
             }
 
-            public void Refresh(List<ComponentDocument> currentModelList)
+           public void Refresh(List<ComponentDocument> currentModelList)
             {
                 Initialize();
 
                 foreach (var modelDocument in currentModelList)
                 {
-                    if (modelDocument.ModelType != Components.Model.ModelTypeList.Assembly)
+                    if (modelDocument.ModelType != Components.Model.ModelTypeList.Assembly && !modelDocument.Disable)
                     {
                         var currentNode = new DarkTreeNode(modelDocument.ModelFileName);
                         currentNode.Icon = modelDocument.Selected ? Resources.properties_docking_icon : Resources.component_file;
                         currentNode.Tag = modelDocument;
+                        currentNode.Expanded = true;
                         ComponentTreeView.Nodes[(int)modelDocument.ModelType - 1].Nodes.Add(currentNode);
                     }
+                }
+
+                foreach (DarkTreeNode treeNode in ComponentTreeView.Nodes)
+                {
+                    treeNode.Expanded = true;
                 }
 
                 ComponentTreeView.Refresh();

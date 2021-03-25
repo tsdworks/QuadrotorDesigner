@@ -1,0 +1,15 @@
+{
+   "Diameter" : 109.22,
+   "ModelType" : "Propeller",
+   "DisplayName" : "Demo 9443",
+   "Manufacturer" : "Demo",
+   "Model" : "9443",
+   "UnitPrice" : 2,
+   "Reliability" : 80,
+   "OutlineDimension" : {
+      "Length" : 109.22,
+      "Width" : 109.22,
+      "Height" : 0
+   },
+   "Weight" : 7.5
+}

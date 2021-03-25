@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\Model.Assembly.cs" />
     <Compile Include="Components\Model.Base.cs" />
     <Compile Include="Components\Model.Battery.cs" />
     <Compile Include="Components\Model.Body.cs" />

@@ -9,6 +9,8 @@ using QuadrotorDesigner.Workspace.Properties;
 using QuadrotorDesigner.Utils.Notation;
 using System.IO;
 using QuadrotorDesigner.Utils.IOStream;
+using QuadrotorDesigner.Workspace.UserInterface.DockTools;
+using static QuadrotorDesigner.Workspace.Designer.DesignEngine;
 
 namespace QuadrotorDesigner.Workspace
 {
@@ -19,14 +21,20 @@ namespace QuadrotorDesigner.Workspace
             public string ModelFileName;
             public string FilePath;
             public string ModelFileWindowTitle;
+
             public bool Unsaved;
             public bool Editable;
             public bool Selected;
+            public bool Disable;
+
             public Model.ModelTypeList ModelType;
             public Image DoucumentIcon;
+
             public string JSONText;
 
-            public UserInterface.DockTools.DockDocument DockDocument;
+            public DockDocument DockDocument;
+
+            public RelationDesigner DroneDesigner;
 
             public ComponentDocument(string filePath = "", string modelFileName = "", string jsonText = "",
                 Model.ModelTypeList modelType = Model.ModelTypeList.None, bool fileEditable = false, bool selectState = false)
@@ -37,13 +45,16 @@ namespace QuadrotorDesigner.Workspace
                 ModelType = modelType;
                 Editable = fileEditable;
                 Selected = selectState;
+                Disable = false;
 
                 ModelFileWindowTitle = 
                     (Editable ? Resources.TitleEditable : Resources.TitleReadonly) + ModelFileName;
 
                 DoucumentIcon = ModelType == Model.ModelTypeList.Assembly ? Resources.design_icon : Resources.component_file;
 
-                DockDocument = new UserInterface.DockTools.DockDocument(ModelFileWindowTitle, jsonText, DoucumentIcon);
+                DockDocument = new DockDocument(this);
+
+                DroneDesigner = null;
             }
 
             public void UpdateWindowTitle()
@@ -55,10 +66,23 @@ namespace QuadrotorDesigner.Workspace
 
                 DockDocument.Refresh();
             }
+
+            public void AssemblyUpdateEditor()
+            {
+                if (DroneDesigner != null)
+                {
+                    JSONText = DroneDesigner.GetDesignProjectJSON();
+                    DockDocument.SetEditorContent(JSONText);
+                    DockDocument.SetEditorReadonly(Editable);
+                    FStream.WriteStreamToTextFile(FilePath, JSONText);
+                }
+            }
         }
 
         static public List<ComponentDocument> LocalModelDocuments = new List<ComponentDocument>();
         static public ComponentDocument CurrentModelDocument = null;
+        static public ComponentDocument CurrentSelectedModelNode = null;
+        static public ComponentDocument CurrentAssembly = null;
 
         public static List<ComponentDocument> LoadModelDocuments(string folderName, string extName, Model.ModelTypeList modelType)
         {
@@ -81,10 +105,10 @@ namespace QuadrotorDesigner.Workspace
             return retValue;
         }
 
-        public static void SetCurrentModelDocument(ComponentDocument currentDocument)
+        public static void NewAssembly(string Name, string Author, string Description, string FileName, string FilePath)
         {
-            CurrentModelDocument = currentDocument;
+            CurrentAssembly = new ComponentDocument(FilePath, FileName, string.Empty, Model.ModelTypeList.Assembly, false, false);
+            CurrentAssembly.DroneDesigner = new RelationDesigner(Name, Author, Description, LocalModelDocuments);
         }
-
     }
 }

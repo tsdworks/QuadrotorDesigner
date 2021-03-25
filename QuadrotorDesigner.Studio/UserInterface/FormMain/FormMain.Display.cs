@@ -14,6 +14,7 @@ using DarkUI.Forms;
 using DarkUI.Win32;
 using QuadrotorDesigner.Utils.IOStream;
 using QuadrotorDesigner.Workspace.Properties;
+using QuadrotorDesigner.Workspace.UserInterface.DockTools;
 
 namespace QuadrotorDesigner.Workspace.UserInterface
 {
@@ -54,6 +55,19 @@ namespace QuadrotorDesigner.Workspace.UserInterface
                 dockPanelMain.AddContent(dockWindow);
             }
 
+            dockPanelMain.ActiveContentChanged += (_a, _b) =>
+                {
+                    if (_b.Content is DockDocument)
+                    {
+                        var queryResult = DocumentManager.LocalModelDocuments.Where(obj => obj.DockDocument == _b.Content).ToList();
+
+                        if (queryResult != null && queryResult.Count > 0)
+                        {
+                            DocumentManager.CurrentModelDocument = queryResult[0];
+                        }
+                    }
+                };
+
             DisplaySetupMenu();
         }
 
@@ -89,6 +103,46 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             buttonComponentsExplorer.CheckState = menuItemComponentsExplorer.CheckState;
             buttonProperties.CheckState = menuItemProperties.CheckState;
             buttonOutput.CheckState = menuItemOutput.CheckState;
+        }
+
+        private void DisplaySetMenuEnable()
+        {
+            if (DocumentManager.CurrentAssembly == null)
+            {
+                buttonRunAnalysis.Enabled = false;
+                buttonComponentsExplorer.Enabled = false;
+                buttonProperties.Enabled = false;
+                buttonOutput.Enabled = false;
+                subMenuItemNewDesign.Enabled = true;
+
+                menuItemRunAnalysis.Enabled = false;
+                menuItemComponentsExplorer.Enabled = false;
+                menuItemProperties.Enabled = false;
+                menuItemOutput.Enabled = false;
+                menuItemNewDesign.Enabled = true;
+
+                if (dockPanelMain.ContainsContent(dockToolComponents)) DisplayToggleDockWindow(dockToolComponents);
+                if (dockPanelMain.ContainsContent(dockToolProperties)) DisplayToggleDockWindow(dockToolProperties);
+                if (dockPanelMain.ContainsContent(dockToolOutput)) DisplayToggleDockWindow(dockToolOutput);
+            }
+            else
+            {
+                buttonRunAnalysis.Enabled = DocumentManager.CurrentAssembly.DroneDesigner.CheckFullDefined();
+                buttonComponentsExplorer.Enabled = true;
+                buttonProperties.Enabled = true;
+                buttonOutput.Enabled = true;
+                subMenuItemNewDesign.Enabled = false;
+
+                menuItemRunAnalysis.Enabled = DocumentManager.CurrentAssembly.DroneDesigner.CheckFullDefined(); ;
+                menuItemComponentsExplorer.Enabled = true;
+                menuItemProperties.Enabled = true;
+                menuItemOutput.Enabled = true;
+                menuItemNewDesign.Enabled = false;
+
+                if (!dockPanelMain.ContainsContent(dockToolComponents)) DisplayToggleDockWindow(dockToolComponents);
+                if (!dockPanelMain.ContainsContent(dockToolProperties)) DisplayToggleDockWindow(dockToolProperties);
+                if (!dockPanelMain.ContainsContent(dockToolOutput)) DisplayToggleDockWindow(dockToolOutput);
+            }
         }
     }
 }

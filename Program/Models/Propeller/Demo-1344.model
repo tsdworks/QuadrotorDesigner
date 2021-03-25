@@ -1,0 +1,15 @@
+{
+   "Diameter" : 330,
+   "ModelType" : "Propeller",
+   "DisplayName" : "Demo 1344",
+   "Manufacturer" : "Demo",
+   "Model" : "1344",
+   "UnitPrice" : 8,
+   "Reliability" : 80,
+   "OutlineDimension" : {
+      "Length" : 330,
+      "Width" : 330,
+      "Height" : 0
+   },
+   "Weight" : 19
+}

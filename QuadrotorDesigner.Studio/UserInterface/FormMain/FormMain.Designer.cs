@@ -29,6 +29,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.menuStripMain = new DarkUI.Controls.DarkMenuStrip();
             this.menuFile = new System.Windows.Forms.ToolStripMenuItem();
@@ -88,9 +89,15 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.toolStripStatusLabelState = new System.Windows.Forms.ToolStripStatusLabel();
             this.dockPanelMain = new DarkUI.Docking.DarkDockPanel();
             this.separatorMain = new DarkUI.Controls.DarkSeparator();
+            this.contextMenuTreeView = new DarkUI.Controls.DarkContextMenu();
+            this.contextMenuTreeViewSelect = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.contextMenuTreeViewModel = new System.Windows.Forms.ToolStripMenuItem();
+            this.timerMenu = new System.Windows.Forms.Timer(this.components);
             this.menuStripMain.SuspendLayout();
             this.toolbarMain.SuspendLayout();
             this.statusStripMain.SuspendLayout();
+            this.contextMenuTreeView.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStripMain
@@ -107,7 +114,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuStripMain.Location = new System.Drawing.Point(0, 0);
             this.menuStripMain.Name = "menuStripMain";
             this.menuStripMain.Padding = new System.Windows.Forms.Padding(3, 2, 0, 2);
-            this.menuStripMain.Size = new System.Drawing.Size(1024, 27);
+            this.menuStripMain.Size = new System.Drawing.Size(1049, 27);
             this.menuStripMain.TabIndex = 0;
             this.menuStripMain.Text = "darkMenuStrip1";
             // 
@@ -153,6 +160,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             | System.Windows.Forms.Keys.N)));
             this.menuItemNewDesign.Size = new System.Drawing.Size(269, 22);
             this.menuItemNewDesign.Text = "&Drone Design";
+            this.menuItemNewDesign.Click += new System.EventHandler(this.menuItemNewDesign_Click);
             // 
             // menuItemNewModel
             // 
@@ -386,6 +394,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuItemRunAnalysis.ShortcutKeys = System.Windows.Forms.Keys.F5;
             this.menuItemRunAnalysis.Size = new System.Drawing.Size(179, 24);
             this.menuItemRunAnalysis.Text = "&Run Analysis";
+            this.menuItemRunAnalysis.Click += new System.EventHandler(this.menuItemRunAnalysis_Click);
             // 
             // menuItemWindow
             // 
@@ -504,7 +513,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.toolbarMain.Location = new System.Drawing.Point(0, 29);
             this.toolbarMain.Name = "toolbarMain";
             this.toolbarMain.Padding = new System.Windows.Forms.Padding(5, 0, 1, 0);
-            this.toolbarMain.Size = new System.Drawing.Size(1024, 28);
+            this.toolbarMain.Size = new System.Drawing.Size(1049, 28);
             this.toolbarMain.TabIndex = 2;
             this.toolbarMain.Text = "darkToolStrip1";
             // 
@@ -651,6 +660,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.buttonRunAnalysis.Name = "buttonRunAnalysis";
             this.buttonRunAnalysis.Size = new System.Drawing.Size(23, 25);
             this.buttonRunAnalysis.Text = "Run Analysis";
+            this.buttonRunAnalysis.Click += new System.EventHandler(this.buttonRunAnalysis_Click);
             // 
             // toolStripSeparator3
             // 
@@ -703,10 +713,10 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.statusStripMain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.statusStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabelState});
-            this.statusStripMain.Location = new System.Drawing.Point(0, 581);
+            this.statusStripMain.Location = new System.Drawing.Point(0, 631);
             this.statusStripMain.Name = "statusStripMain";
             this.statusStripMain.Padding = new System.Windows.Forms.Padding(0, 5, 0, 3);
-            this.statusStripMain.Size = new System.Drawing.Size(1024, 30);
+            this.statusStripMain.Size = new System.Drawing.Size(1049, 30);
             this.statusStripMain.SizingGrip = false;
             this.statusStripMain.TabIndex = 3;
             this.statusStripMain.Text = "darkStatusStrip1";
@@ -724,7 +734,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.dockPanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dockPanelMain.Location = new System.Drawing.Point(0, 57);
             this.dockPanelMain.Name = "dockPanelMain";
-            this.dockPanelMain.Size = new System.Drawing.Size(1024, 524);
+            this.dockPanelMain.Size = new System.Drawing.Size(1049, 574);
             this.dockPanelMain.TabIndex = 4;
             this.dockPanelMain.ContentAdded += new System.EventHandler<DarkUI.Docking.DockContentEventArgs>(this.dockPanelMain_ContentAdded);
             this.dockPanelMain.ContentRemoved += new System.EventHandler<DarkUI.Docking.DockContentEventArgs>(this.dockPanelMain_ContentRemoved);
@@ -734,14 +744,59 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.separatorMain.Dock = System.Windows.Forms.DockStyle.Top;
             this.separatorMain.Location = new System.Drawing.Point(0, 27);
             this.separatorMain.Name = "separatorMain";
-            this.separatorMain.Size = new System.Drawing.Size(1024, 2);
+            this.separatorMain.Size = new System.Drawing.Size(1049, 2);
             this.separatorMain.TabIndex = 1;
+            // 
+            // contextMenuTreeView
+            // 
+            this.contextMenuTreeView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.contextMenuTreeView.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.contextMenuTreeView.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.contextMenuTreeViewSelect,
+            this.toolStripMenuItem1,
+            this.contextMenuTreeViewModel});
+            this.contextMenuTreeView.Name = "contextMenuTreeView";
+            this.contextMenuTreeView.Size = new System.Drawing.Size(146, 55);
+            this.contextMenuTreeView.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuTreeView_Opening);
+            // 
+            // contextMenuTreeViewSelect
+            // 
+            this.contextMenuTreeViewSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.contextMenuTreeViewSelect.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.contextMenuTreeViewSelect.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.component_selected;
+            this.contextMenuTreeViewSelect.Name = "contextMenuTreeViewSelect";
+            this.contextMenuTreeViewSelect.Size = new System.Drawing.Size(145, 22);
+            this.contextMenuTreeViewSelect.Text = "Select";
+            this.contextMenuTreeViewSelect.Click += new System.EventHandler(this.contextMenuTreeViewSelect_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.toolStripMenuItem1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(142, 6);
+            // 
+            // contextMenuTreeViewModel
+            // 
+            this.contextMenuTreeViewModel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.contextMenuTreeViewModel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.contextMenuTreeViewModel.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.component_file;
+            this.contextMenuTreeViewModel.Name = "contextMenuTreeViewModel";
+            this.contextMenuTreeViewModel.Size = new System.Drawing.Size(145, 22);
+            this.contextMenuTreeViewModel.Text = "View Model";
+            // 
+            // timerMenu
+            // 
+            this.timerMenu.Enabled = true;
+            this.timerMenu.Interval = 200;
+            this.timerMenu.Tick += new System.EventHandler(this.timerMenu_Tick);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1024, 611);
+            this.ClientSize = new System.Drawing.Size(1049, 661);
             this.Controls.Add(this.dockPanelMain);
             this.Controls.Add(this.toolbarMain);
             this.Controls.Add(this.separatorMain);
@@ -763,6 +818,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.toolbarMain.PerformLayout();
             this.statusStripMain.ResumeLayout(false);
             this.statusStripMain.PerformLayout();
+            this.contextMenuTreeView.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -828,6 +884,11 @@ namespace QuadrotorDesigner.Workspace.UserInterface
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelState;
         private DarkUI.Docking.DarkDockPanel dockPanelMain;
         private DarkUI.Controls.DarkSeparator separatorMain;
+        private System.Windows.Forms.ToolStripMenuItem contextMenuTreeViewSelect;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem contextMenuTreeViewModel;
+        public DarkUI.Controls.DarkContextMenu contextMenuTreeView;
+        private System.Windows.Forms.Timer timerMenu;
     }
 }
 

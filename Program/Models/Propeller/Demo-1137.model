@@ -1,0 +1,15 @@
+{
+   "Diameter" : 280,
+   "ModelType" : "Propeller",
+   "DisplayName" : "Demo 1137",
+   "Manufacturer" : "Demo",
+   "Model" : "1137",
+   "UnitPrice" : 6,
+   "Reliability" : 80,
+   "OutlineDimension" : {
+      "Length" : 280,
+      "Width" : 280,
+      "Height" : 0
+   },
+   "Weight" : 13
+}

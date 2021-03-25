@@ -1,0 +1,26 @@
+{
+   "IORequests" : {
+      "GPIO" : 0,
+      "USART" : 0,
+      "SPI" : 0,
+      "I2C" : 0,
+      "Ethernet" : 0
+   },
+   "Power" : 0,
+   "BodyAttachLocation" : "None",
+   "Parameters" : {
+   },
+   "Feature" : "",
+   "ModelType" : "Device",
+   "DisplayName" : "",
+   "Manufacturer" : "",
+   "Model" : "",
+   "UnitPrice" : 0,
+   "Reliability" : 0,
+   "OutlineDimension" : {
+      "Length" : 0,
+      "Width" : 0,
+      "Height" : 0
+   },
+   "Weight" : 0
+}

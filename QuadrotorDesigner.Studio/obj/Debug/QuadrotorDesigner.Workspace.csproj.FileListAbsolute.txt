@@ -14,3 +14,4 @@ C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Studio\obj\Debu
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Studio\obj\Debug\QuadrotorDesigner.Workspace.csproj.CopyComplete
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Studio\obj\Debug\QuadrotorDesigner.Workspace.exe
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Studio\obj\Debug\QuadrotorDesigner.Workspace.pdb
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\QuadrotorDesigner.Studio\obj\Debug\QuadrotorDesigner.Workspace.UserInterface.FormNewDesign.resources

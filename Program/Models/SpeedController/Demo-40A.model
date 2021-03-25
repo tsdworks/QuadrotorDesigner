@@ -1,0 +1,16 @@
+{
+   "MaxOutputCurrent" : 60,
+   "MaxContinuousCurrent" : 40,
+   "ModelType" : "ESC",
+   "DisplayName" : "Demo 40A",
+   "Manufacturer" : "Demo",
+   "Model" : "40A",
+   "UnitPrice" : 9,
+   "Reliability" : 80,
+   "OutlineDimension" : {
+      "Length" : 56,
+      "Width" : 25.2,
+      "Height" : 12.4
+   },
+   "Weight" : 32
+}

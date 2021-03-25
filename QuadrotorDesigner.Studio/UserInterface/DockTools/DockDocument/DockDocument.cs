@@ -21,12 +21,23 @@ namespace QuadrotorDesigner.Workspace.UserInterface.DockTools
             InitializeComponent();
         }
 
-        public DockDocument(string text, string content, Image icon)
+        public DockDocument(DocumentManager.ComponentDocument currentDocument)
             : this()
         {
-            DockText = text;
-            textboxEditor.Text = content;
+            DockText = currentDocument.ModelFileWindowTitle;
+            textboxEditor.Text = currentDocument.JSONText;
+            textboxEditor.ReadOnly = !currentDocument.Editable;
+            Icon = currentDocument.DoucumentIcon;
+        }
+
+        public DockDocument(string title, string text, bool editable, Bitmap icon)
+            : this()
+        {
+            DockText = title;
+            textboxEditor.Text = text;
+            textboxEditor.ReadOnly = !editable;
             Icon = icon;
         }
+
     }
 }

@@ -1,0 +1,17 @@
+{
+   "Capacity" : 2800,
+   "CRating" : 25,
+   "TypicalVoltage" : 14.8,
+   "ModelType" : "Battery",
+   "DisplayName" : "Demo Battery 2800mAh 25C 4S",
+   "Manufacturer" : "Demo",
+   "Model" : "2800mAh-25C-4S-14.8",
+   "UnitPrice" : 25,
+   "Reliability" : 80,
+   "OutlineDimension" : {
+      "Length" : 106,
+      "Width" : 34,
+      "Height" : 32
+   },
+   "Weight" : 234
+}

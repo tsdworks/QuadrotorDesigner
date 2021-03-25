@@ -16,6 +16,19 @@ namespace QuadrotorDesigner.Workspace.UserInterface.DockTools
 {
     public partial class DockDocument : DarkDocument
     {
+        public void SetEditorContent(string Content)
+        {
+            textboxEditor.Text = Content;
+        }
 
+        public string GetEditorContent()
+        {
+            return textboxEditor.Text;
+        }
+
+        public void SetEditorReadonly(bool Editable)
+        {
+            textboxEditor.ReadOnly = !Editable;
+        }
     }
 }

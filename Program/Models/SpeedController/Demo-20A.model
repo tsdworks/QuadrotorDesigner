@@ -1,0 +1,16 @@
+{
+   "MaxOutputCurrent" : 30,
+   "MaxContinuousCurrent" : 20,
+   "ModelType" : "ESC",
+   "DisplayName" : "Demo 20A",
+   "Manufacturer" : "Demo",
+   "Model" : "20A",
+   "UnitPrice" : 8,
+   "Reliability" : 80,
+   "OutlineDimension" : {
+      "Length" : 42,
+      "Width" : 21.6,
+      "Height" : 12
+   },
+   "Weight" : 18.5
+}

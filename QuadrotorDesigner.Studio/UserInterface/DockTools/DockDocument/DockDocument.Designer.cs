@@ -60,6 +60,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface.DockTools
             this.textboxEditor.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.textboxEditor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textboxEditor.FoldingIndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(110)))), ((int)(((byte)(175)))));
+            this.textboxEditor.Font = new System.Drawing.Font("Courier New", 9.75F);
             this.textboxEditor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
             this.textboxEditor.IndentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(53)))));
             this.textboxEditor.IsReplaceMode = false;

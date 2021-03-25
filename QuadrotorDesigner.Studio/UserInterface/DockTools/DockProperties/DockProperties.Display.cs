@@ -12,14 +12,15 @@ using DarkUI.Controls;
 using DarkUI.Docking;
 using QuadrotorDesigner.Utils.IOStream;
 using QuadrotorDesigner.Utils.Notation;
+using QuadrotorDesigner.Workspace.Properties;
 
 namespace QuadrotorDesigner.Workspace.UserInterface.DockTools
 {
     public partial class DockProperties : DarkToolWindow
     {
-        public void DisplayShowDetail(string jsonText)
+        public void DisplayShowDetail(DocumentManager.ComponentDocument currentDocument)
         {
-            var componentBaseModel = OStream.GetStreamObject<Components.Model.Base>(jsonText);
+            var componentBaseModel = OStream.GetStreamObject<Components.Model.Base>(currentDocument.JSONText);
 
             labelType.Text = "Type : " + componentBaseModel.ModelType.ToString();
             labelDispalyName.Text = "Dispaly Name : " + componentBaseModel.DisplayName.ToString();
@@ -32,11 +33,15 @@ namespace QuadrotorDesigner.Workspace.UserInterface.DockTools
             labelOutlineDimensionY.Text = "Outline Width : " + componentBaseModel.OutlineDimension.Width.ToString();
             labelOutlineDimensionZ.Text = "Outline Height : " + componentBaseModel.OutlineDimension.Height.ToString();
 
-            string previewImageFileName = FStream.CombinePath(Application.StartupPath, componentBaseModel.PreviewImageFileName, false);
+            string previewImageFileName = currentDocument.FilePath.Replace(Resources.ModelFileExtName, ".jpg");
 
             if (File.Exists(previewImageFileName))
             {
                 pictureBoxImagePreview.Image = Bitmap.FromFile(previewImageFileName);
+            }
+            else
+            {
+                pictureBoxImagePreview.Image = null;
             }
         }
     }

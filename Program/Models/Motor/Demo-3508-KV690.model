@@ -1,0 +1,254 @@
+{
+   "KVValue" : 690,
+   "Diameter" : 42,
+   "StandbyCurrent" : 0.26,
+   "InternalResistance" : 0.086,
+   "MaxCurrent" : 30,
+   "MaxPower" : 440,
+   "AdaptedPropellerModels" : [
+      "1137",
+      "1240",
+      "1344",
+      "1448"
+   ],
+   "VoltagePerformanceCurvesByPropellers" : {
+      "1137" : {
+         "CurveByVoltage" : [
+            {
+               "Voltage" : 14.8,
+               "CurrentPoints" : [
+                  1.8,
+                  2.8,
+                  4.3,
+                  6.1,
+                  8,
+                  10.3
+               ],
+               "ThrustPoints" : [
+                  349,
+                  491,
+                  653,
+                  786,
+                  951,
+                  1146
+               ],
+               "PowerPoints" : [
+                  26.6,
+                  41.4,
+                  63.6,
+                  90.3,
+                  118.4,
+                  152.4
+               ],
+               "EfficiencyPoints" : [
+                  13.101,
+                  11.848,
+                  10.261,
+                  8.706,
+                  8.032,
+                  7.518
+               ]
+            }
+         ]
+      },
+      "1240" : {
+         "CurveByVoltage" : [
+            {
+               "Voltage" : 11.1,
+               "CurrentPoints" : [
+                  1.5,
+                  2.6,
+                  3.7,
+                  5.2,
+                  7,
+                  8.7
+               ],
+               "ThrustPoints" : [
+                  262,
+                  383,
+                  491,
+                  620,
+                  742,
+                  882
+               ],
+               "PowerPoints" : [
+                  16.7,
+                  28.9,
+                  41.1,
+                  57.7,
+                  77.7,
+                  96.6
+               ],
+               "EfficiencyPoints" : [
+                  15.736,
+                  13.271,
+                  11.955,
+                  10.742,
+                  9.55,
+                  8.926
+               ]
+            },
+            {
+               "Voltage" : 14.8,
+               "CurrentPoints" : [
+                  2.3,
+                  4.1,
+                  6,
+                  8.2,
+                  11,
+                  13.7
+               ],
+               "ThrustPoints" : [
+                  447,
+                  642,
+                  851,
+                  1001,
+                  1177,
+                  1402
+               ],
+               "PowerPoints" : [
+                  34,
+                  60.7,
+                  88.8,
+                  121.4,
+                  162.8,
+                  202.8
+               ],
+               "EfficiencyPoints" : [
+                  13.132,
+                  10.58,
+                  9.583,
+                  8.248,
+                  7.23,
+                  6.915
+               ]
+            }
+         ]
+      },
+      "1344" : {
+         "CurveByVoltage" : [
+            {
+               "Voltage" : 11.1,
+               "CurrentPoints" : [
+                  1.9,
+                  2.9,
+                  4.2,
+                  6.1,
+                  8.1,
+                  10
+               ],
+               "ThrustPoints" : [
+                  317,
+                  451,
+                  567,
+                  728,
+                  859,
+                  1001
+               ],
+               "PowerPoints" : [
+                  21.1,
+                  32.2,
+                  46.6,
+                  67.7,
+                  89.9,
+                  111
+               ],
+               "EfficiencyPoints" : [
+                  15.031,
+                  14.011,
+                  12.162,
+                  10.752,
+                  9.554,
+                  9.018
+               ]
+            },
+            {
+               "Voltage" : 14.8,
+               "CurrentPoints" : [
+                  3,
+                  4.6,
+                  6.8,
+                  9.4,
+                  12.5,
+                  15.6
+               ],
+               "ThrustPoints" : [
+                  562,
+                  742,
+                  948,
+                  1169,
+                  1391,
+                  1586
+               ],
+               "PowerPoints" : [
+                  44.4,
+                  68.1,
+                  100.6,
+                  139.1,
+                  185,
+                  230.9
+               ],
+               "EfficiencyPoints" : [
+                  12.658,
+                  10.884,
+                  9.42,
+                  8.403,
+                  7.519,
+                  6.869
+               ]
+            }
+         ]
+      },
+      "1448" : {
+         "CurveByVoltage" : [
+            {
+               "Voltage" : 11.1,
+               "CurrentPoints" : [
+                  2.3,
+                  3.9,
+                  5.8,
+                  7.8,
+                  10.4,
+                  12.9
+               ],
+               "ThrustPoints" : [
+                  394,
+                  557,
+                  711,
+                  835,
+                  1030,
+                  1180
+               ],
+               "PowerPoints" : [
+                  25.5,
+                  43.3,
+                  64.4,
+                  86.6,
+                  115.4,
+                  143.2
+               ],
+               "EfficiencyPoints" : [
+                  15.443,
+                  12.867,
+                  11.044,
+                  9.644,
+                  8.922,
+                  8.241
+               ]
+            }
+         ]
+      }
+   },
+   "ModelType" : "Motor",
+   "DisplayName" : "Demo 3508 KV690",
+   "Manufacturer" : "Demo",
+   "Model" : "3508",
+   "UnitPrice" : 30,
+   "Reliability" : 90,
+   "OutlineDimension" : {
+      "Length" : 42,
+      "Width" : 42,
+      "Height" : 25.3
+   },
+   "Weight" : 88
+}

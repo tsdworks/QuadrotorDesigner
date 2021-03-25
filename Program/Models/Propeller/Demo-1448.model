@@ -1,0 +1,15 @@
+{
+   "Diameter" : 354,
+   "ModelType" : "Propeller",
+   "DisplayName" : "Demo 1448",
+   "Manufacturer" : "Demo",
+   "Model" : "1448",
+   "UnitPrice" : 9,
+   "Reliability" : 80,
+   "OutlineDimension" : {
+      "Length" : 354,
+      "Width" : 354,
+      "Height" : 0
+   },
+   "Weight" : 21
+}

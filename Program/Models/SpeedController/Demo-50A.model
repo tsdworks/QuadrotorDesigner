@@ -1,0 +1,16 @@
+{
+   "MaxOutputCurrent" : 70,
+   "MaxContinuousCurrent" : 50,
+   "ModelType" : "ESC",
+   "DisplayName" : "Demo 50A",
+   "Manufacturer" : "Demo",
+   "Model" : "50A",
+   "UnitPrice" : 15,
+   "Reliability" : 80,
+   "OutlineDimension" : {
+      "Length" : 48,
+      "Width" : 30,
+      "Height" : 15.5
+   },
+   "Weight" : 54.4
+}

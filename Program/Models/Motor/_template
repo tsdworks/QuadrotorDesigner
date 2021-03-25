@@ -1,0 +1,60 @@
+{
+   "KVValue" : 0,
+   "Diameter" : 0,
+   "StandbyCurrent" : 0,
+   "InternalResistance" : 0,
+   "MaxCurrent" : 0,
+   "MaxPower" : 0,
+   "AdaptedPropellerModels" : [
+      ""
+   ],
+   "VoltagePerformanceCurvesByPropellers" : {
+      "9443" : {
+         "CurveByVoltage" : [
+            {
+               "Voltage" : 0,
+               "CurrentPoints" : [
+
+               ],
+               "ThrustPoints" : [
+
+               ],
+               "PowerPoints" : [
+
+               ],
+               "EfficiencyPoints" : [
+
+               ]
+            },
+            {
+               "Voltage" : 0,
+               "CurrentPoints" : [
+
+               ],
+               "ThrustPoints" : [
+
+               ],
+               "PowerPoints" : [
+
+               ],
+               "EfficiencyPoints" : [
+
+               ]
+            }
+         ]
+      }
+   },
+   "ModelType" : "",
+   "DisplayName" : "",
+   "Manufacturer" : "",
+   "Model" : "",
+   "UnitPrice" : 0,
+   "Reliability" : 0,
+   "OutlineDimension" : {
+      "Length" : 0,
+      "Width" : 0,
+      "Height" : 0
+   },
+   "Weight" : 0,
+   "PreviewImageFileName" : null
+}

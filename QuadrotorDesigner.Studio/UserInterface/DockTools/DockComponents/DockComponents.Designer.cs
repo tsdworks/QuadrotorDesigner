@@ -36,8 +36,10 @@ namespace QuadrotorDesigner.Workspace.UserInterface.DockTools
             // 
             this.treeComponents.AllowMoveNodes = true;
             this.treeComponents.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeComponents.Indent = 22;
+            this.treeComponents.ItemHeight = 22;
             this.treeComponents.Location = new System.Drawing.Point(0, 25);
-            this.treeComponents.MaxDragChange = 20;
+            this.treeComponents.MaxDragChange = 22;
             this.treeComponents.Name = "treeComponents";
             this.treeComponents.ShowIcons = true;
             this.treeComponents.Size = new System.Drawing.Size(220, 303);

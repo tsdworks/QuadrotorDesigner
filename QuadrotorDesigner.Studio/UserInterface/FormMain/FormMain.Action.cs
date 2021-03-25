@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DarkUI;
 using DarkUI.Forms;
+using QuadrotorDesigner.Workspace.Designer;
 
 namespace QuadrotorDesigner.Workspace.UserInterface
 {
@@ -26,7 +27,8 @@ namespace QuadrotorDesigner.Workspace.UserInterface
 
         private void ActionSelectorNodeChanged(DocumentManager.ComponentDocument currentDocument)
         {
-            dockToolProperties.DisplayShowDetail(currentDocument.JSONText);
+            DocumentManager.CurrentSelectedModelNode = currentDocument;
+            dockToolProperties.DisplayShowDetail(currentDocument);
         }
     }
 }

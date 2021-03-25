@@ -1,5 +1,6 @@
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\Program\fastJSON.dll
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\Program\fastJSON.pdb
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\fastJSON\obj\Debug\fastJSON.csprojAssemblyReference.cache
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\fastJSON\obj\Debug\fastJSON.csproj.CoreCompileInputs.cache
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\fastJSON\obj\Debug\fastJSON.dll
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\fastJSON\obj\Debug\fastJSON.pdb

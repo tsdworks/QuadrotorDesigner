@@ -24,6 +24,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface.DockTools
             DarkListItem listItem = new DarkListItem();
             listItem.Text = output;
             listOutput.Items.Add(listItem);
+            listOutput.SelectItem(listOutput.Items.Count - 1);
         }
     }
 }

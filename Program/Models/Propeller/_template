@@ -1,0 +1,15 @@
+{
+   "Diameter" : 0,
+   "ModelType" : "Propeller",
+   "DisplayName" : "",
+   "Manufacturer" : "",
+   "Model" : "",
+   "UnitPrice" : 0,
+   "Reliability" : 0,
+   "OutlineDimension" : {
+      "Length" : 0,
+      "Width" : 0,
+      "Height" : 0
+   },
+   "Weight" : 0
+}

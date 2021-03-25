@@ -77,6 +77,8 @@ namespace QuadrotorDesigner.Components
                 I2C = i2c;
                 Ethernet = ethernet;
             }
+
+            public IONumber() { }
         };
 
         // component base class
@@ -90,11 +92,10 @@ namespace QuadrotorDesigner.Components
             public double Reliability;
             public Dimension OutlineDimension;
             public double Weight;
-            public string PreviewImageFileName;
 
             public Base(ModelTypeList model_type = ModelTypeList.None, string display_name = "", string manufacturer = "", string model = "",
                 double unit_price = 0, double reliability = 0, double length = 0, double width = 0,
-                double height = 0, double weight = 0, string preview_image_filename = "")
+                double height = 0, double weight = 0)
             {
                 ModelType = model_type;
                 DisplayName = display_name;
@@ -106,7 +107,6 @@ namespace QuadrotorDesigner.Components
                 OutlineDimension = new Dimension(length, width, height);
 
                 Weight = weight;
-                PreviewImageFileName = preview_image_filename;
             }
 
             public Base()

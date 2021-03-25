@@ -1,6 +1,6 @@
 {
    "MaxPropellerPitch" : 390,
-   "RotorNumber" : 4,
+   "RotorNumber" : 6,
    "BottomAreaSpace" : {
       "Length" : 160,
       "Width" : 160,
@@ -13,10 +13,11 @@
    },
    "MaxLoadWeight" : 800,
    "AdaptedMotorModels" : [
-      "3500"
+      "3508",
+      "4208"
    ],
    "ModelType" : "Body",
-   "DisplayName" : "Demo 550",
+   "DisplayName" : "Demo 550 Frame",
    "Manufacturer" : "Demo",
    "Model" : "550",
    "UnitPrice" : 60,
@@ -26,6 +27,5 @@
       "Width" : 550,
       "Height" : 300
    },
-   "Weight" : 630,
-   "PreviewImageFileName" : ""
+   "Weight" : 630
 }

@@ -16,7 +16,7 @@
       "2212"
    ],
    "ModelType" : "Body",
-   "DisplayName" : "Demo 450",
+   "DisplayName" : "Demo 450 Frame",
    "Manufacturer" : "Demo",
    "Model" : "450",
    "UnitPrice" : 50,
@@ -26,6 +26,5 @@
       "Width" : 450,
       "Height" : 250
    },
-   "Weight" : 520,
-   "PreviewImageFileName" : ""
+   "Weight" : 520
 }

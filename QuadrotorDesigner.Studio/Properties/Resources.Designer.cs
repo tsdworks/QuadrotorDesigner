@@ -118,6 +118,16 @@ namespace QuadrotorDesigner.Workspace.Properties {
         }
         
         /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap component_selected {
+            get {
+                object obj = ResourceManager.GetObject("component_selected", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Body|Motor|ESC|Battery|Propeller|Device|RC|Flight Controller 的本地化字符串。
         /// </summary>
         internal static string ComponentsTypeList {

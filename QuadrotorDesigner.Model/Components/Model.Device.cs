@@ -17,9 +17,8 @@ namespace QuadrotorDesigner.Components
             public IONumber IORequests;
             public double Power;
             public DeviceBodyAttachLocation BodyAttachLocation;
-
-            public string DeviceName;
             public Dictionary<string, string> Parameters;
+            public string Feature;
 
             public Device() : base()
             {
