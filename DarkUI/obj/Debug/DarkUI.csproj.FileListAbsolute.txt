@@ -12,3 +12,4 @@ C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\DarkUI\obj\Debug\DarkUI.csproj.Ge
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\DarkUI\obj\Debug\DarkUI.csproj.CoreCompileInputs.cache
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\DarkUI\obj\Debug\DarkUI.dll
 C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\DarkUI\obj\Debug\DarkUI.pdb
+C:\Documents\ECN\EI2\PROJET1\QuadrotorDesigner\DarkUI\obj\Debug\DarkUI.csprojAssemblyReference.cache

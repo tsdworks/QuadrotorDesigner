@@ -61,6 +61,15 @@ namespace QuadrotorDesigner.Workspace.Properties {
         }
         
         /// <summary>
+        ///   查找类似 1.0 的本地化字符串。
+        /// </summary>
+        internal static string AppVersion {
+            get {
+                return ResourceManager.GetString("AppVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 \Models\Assembly\ 的本地化字符串。
         /// </summary>
         internal static string AssemblyPath {
@@ -269,6 +278,15 @@ namespace QuadrotorDesigner.Workspace.Properties {
             get {
                 object obj = ResourceManager.GetObject("folder_open", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 https://github.com/TSDArthur/QuadrotorDesigner 的本地化字符串。
+        /// </summary>
+        internal static string GithubPage {
+            get {
+                return ResourceManager.GetString("GithubPage", resourceCulture);
             }
         }
         

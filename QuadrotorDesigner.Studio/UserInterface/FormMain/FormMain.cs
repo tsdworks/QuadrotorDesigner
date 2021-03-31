@@ -134,5 +134,21 @@ namespace QuadrotorDesigner.Workspace.UserInterface
                 dockPanelMain.AddContent(DocumentManager.CurrentAssembly.DockDocument);
             }
         }
+
+        private void menuItemGithub_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(Resources.GithubPage);
+        }
+
+        private void menuItemAbout_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Quadrotor Drone Designer\nVersion: " + Resources.AppVersion + "\nBy ZHANG Muhua & SHIMADA Ryuki", "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void menuItemExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+            Environment.Exit(0);
+        }
     }
 }

@@ -121,6 +121,8 @@ namespace QuadrotorDesigner.Workspace.UserInterface
                 menuItemOutput.Enabled = false;
                 menuItemNewDesign.Enabled = true;
 
+                toolbarMain.Visible = false;
+
                 if (dockPanelMain.ContainsContent(dockToolComponents)) DisplayToggleDockWindow(dockToolComponents);
                 if (dockPanelMain.ContainsContent(dockToolProperties)) DisplayToggleDockWindow(dockToolProperties);
                 if (dockPanelMain.ContainsContent(dockToolOutput)) DisplayToggleDockWindow(dockToolOutput);
@@ -138,6 +140,8 @@ namespace QuadrotorDesigner.Workspace.UserInterface
                 menuItemProperties.Enabled = true;
                 menuItemOutput.Enabled = true;
                 menuItemNewDesign.Enabled = false;
+
+                toolbarMain.Visible = true;
 
                 if (!dockPanelMain.ContainsContent(dockToolComponents)) DisplayToggleDockWindow(dockToolComponents);
                 if (!dockPanelMain.ContainsContent(dockToolProperties)) DisplayToggleDockWindow(dockToolProperties);

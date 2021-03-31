@@ -182,6 +182,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuItemOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.menuItemOpen.Size = new System.Drawing.Size(199, 22);
             this.menuItemOpen.Text = "&Open File";
+            this.menuItemOpen.Visible = false;
             // 
             // menuItemSplit0
             // 
@@ -190,6 +191,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuItemSplit0.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.menuItemSplit0.Name = "menuItemSplit0";
             this.menuItemSplit0.Size = new System.Drawing.Size(196, 6);
+            this.menuItemSplit0.Visible = false;
             // 
             // menuItemSave
             // 
@@ -200,6 +202,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuItemSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.menuItemSave.Size = new System.Drawing.Size(199, 22);
             this.menuItemSave.Text = "&Save";
+            this.menuItemSave.Visible = false;
             // 
             // menuItemSaveAs
             // 
@@ -208,6 +211,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuItemSaveAs.Name = "menuItemSaveAs";
             this.menuItemSaveAs.Size = new System.Drawing.Size(199, 22);
             this.menuItemSaveAs.Text = "&Save As";
+            this.menuItemSaveAs.Visible = false;
             // 
             // menuItemSaveAll
             // 
@@ -219,6 +223,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             | System.Windows.Forms.Keys.S)));
             this.menuItemSaveAll.Size = new System.Drawing.Size(199, 22);
             this.menuItemSaveAll.Text = "&Save All";
+            this.menuItemSaveAll.Visible = false;
             // 
             // menuItemSplit1
             // 
@@ -237,6 +242,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuItemExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.menuItemExit.Size = new System.Drawing.Size(199, 22);
             this.menuItemExit.Text = "&Exit";
+            this.menuItemExit.Click += new System.EventHandler(this.menuItemExit_Click);
             // 
             // menuItemEdit
             // 
@@ -267,7 +273,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuItemGotoLine.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.goto_line_icon;
             this.menuItemGotoLine.Name = "menuItemGotoLine";
             this.menuItemGotoLine.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
-            this.menuItemGotoLine.Size = new System.Drawing.Size(189, 24);
+            this.menuItemGotoLine.Size = new System.Drawing.Size(199, 24);
             this.menuItemGotoLine.Text = "&Goto Line";
             // 
             // menuItemSplit2
@@ -276,7 +282,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuItemSplit2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.menuItemSplit2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.menuItemSplit2.Name = "menuItemSplit2";
-            this.menuItemSplit2.Size = new System.Drawing.Size(186, 6);
+            this.menuItemSplit2.Size = new System.Drawing.Size(196, 6);
             // 
             // menuItemFind
             // 
@@ -285,7 +291,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuItemFind.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.find_icon;
             this.menuItemFind.Name = "menuItemFind";
             this.menuItemFind.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.menuItemFind.Size = new System.Drawing.Size(189, 24);
+            this.menuItemFind.Size = new System.Drawing.Size(199, 24);
             this.menuItemFind.Text = "&Find";
             // 
             // menuItemReplace
@@ -295,7 +301,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuItemReplace.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.replace_icon;
             this.menuItemReplace.Name = "menuItemReplace";
             this.menuItemReplace.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
-            this.menuItemReplace.Size = new System.Drawing.Size(189, 24);
+            this.menuItemReplace.Size = new System.Drawing.Size(199, 24);
             this.menuItemReplace.Text = "&Replace";
             // 
             // menuItemSplit3
@@ -304,7 +310,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuItemSplit3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.menuItemSplit3.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.menuItemSplit3.Name = "menuItemSplit3";
-            this.menuItemSplit3.Size = new System.Drawing.Size(186, 6);
+            this.menuItemSplit3.Size = new System.Drawing.Size(196, 6);
             // 
             // menuItemUndo
             // 
@@ -313,7 +319,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuItemUndo.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.undo_icon;
             this.menuItemUndo.Name = "menuItemUndo";
             this.menuItemUndo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.menuItemUndo.Size = new System.Drawing.Size(189, 24);
+            this.menuItemUndo.Size = new System.Drawing.Size(199, 24);
             this.menuItemUndo.Text = "&Undo";
             // 
             // menuItemRedo
@@ -323,7 +329,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuItemRedo.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.redo_icon;
             this.menuItemRedo.Name = "menuItemRedo";
             this.menuItemRedo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.menuItemRedo.Size = new System.Drawing.Size(189, 24);
+            this.menuItemRedo.Size = new System.Drawing.Size(199, 24);
             this.menuItemRedo.Text = "&Redo";
             // 
             // menuItemSplit4
@@ -332,7 +338,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuItemSplit4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.menuItemSplit4.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.menuItemSplit4.Name = "menuItemSplit4";
-            this.menuItemSplit4.Size = new System.Drawing.Size(186, 6);
+            this.menuItemSplit4.Size = new System.Drawing.Size(196, 6);
             // 
             // menuItemCut
             // 
@@ -341,7 +347,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuItemCut.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.cut_icon;
             this.menuItemCut.Name = "menuItemCut";
             this.menuItemCut.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.menuItemCut.Size = new System.Drawing.Size(189, 24);
+            this.menuItemCut.Size = new System.Drawing.Size(199, 24);
             this.menuItemCut.Text = "&Cut";
             // 
             // menuItemCopy
@@ -350,8 +356,9 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuItemCopy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.menuItemCopy.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.copy_icon;
             this.menuItemCopy.Name = "menuItemCopy";
-            this.menuItemCopy.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.menuItemCopy.Size = new System.Drawing.Size(189, 24);
+            this.menuItemCopy.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.C)));
+            this.menuItemCopy.Size = new System.Drawing.Size(199, 24);
             this.menuItemCopy.Text = "&Copy";
             // 
             // menuItemPaste
@@ -361,7 +368,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuItemPaste.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.paste_icon;
             this.menuItemPaste.Name = "menuItemPaste";
             this.menuItemPaste.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.menuItemPaste.Size = new System.Drawing.Size(189, 24);
+            this.menuItemPaste.Size = new System.Drawing.Size(199, 24);
             this.menuItemPaste.Text = "&Paste";
             // 
             // menuItemDelete
@@ -371,7 +378,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuItemDelete.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.delete_icon;
             this.menuItemDelete.Name = "menuItemDelete";
             this.menuItemDelete.ShortcutKeys = System.Windows.Forms.Keys.Delete;
-            this.menuItemDelete.Size = new System.Drawing.Size(189, 24);
+            this.menuItemDelete.Size = new System.Drawing.Size(199, 24);
             this.menuItemDelete.Text = "&Delete";
             // 
             // menuItemAnalysis
@@ -392,7 +399,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuItemRunAnalysis.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.run_icon;
             this.menuItemRunAnalysis.Name = "menuItemRunAnalysis";
             this.menuItemRunAnalysis.ShortcutKeys = System.Windows.Forms.Keys.F5;
-            this.menuItemRunAnalysis.Size = new System.Drawing.Size(179, 24);
+            this.menuItemRunAnalysis.Size = new System.Drawing.Size(180, 24);
             this.menuItemRunAnalysis.Text = "&Run Analysis";
             this.menuItemRunAnalysis.Click += new System.EventHandler(this.menuItemRunAnalysis_Click);
             // 
@@ -468,6 +475,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             | System.Windows.Forms.Keys.G)));
             this.menuItemGithub.Size = new System.Drawing.Size(257, 24);
             this.menuItemGithub.Text = "&Project Github";
+            this.menuItemGithub.Click += new System.EventHandler(this.menuItemGithub_Click);
             // 
             // menuItemSplit5
             // 
@@ -483,9 +491,11 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.menuItemAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.menuItemAbout.Image = global::QuadrotorDesigner.Workspace.Properties.Resources.info_icon;
             this.menuItemAbout.Name = "menuItemAbout";
-            this.menuItemAbout.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
+            this.menuItemAbout.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.A)));
             this.menuItemAbout.Size = new System.Drawing.Size(257, 24);
             this.menuItemAbout.Text = "&About";
+            this.menuItemAbout.Click += new System.EventHandler(this.menuItemAbout_Click);
             // 
             // toolbarMain
             // 
@@ -559,6 +569,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(23, 25);
             this.buttonSave.Text = "Save";
+            this.buttonSave.Visible = false;
             // 
             // buttonSaveAll
             // 
@@ -570,6 +581,7 @@ namespace QuadrotorDesigner.Workspace.UserInterface
             this.buttonSaveAll.Name = "buttonSaveAll";
             this.buttonSaveAll.Size = new System.Drawing.Size(23, 25);
             this.buttonSaveAll.Text = "Save All";
+            this.buttonSaveAll.Visible = false;
             // 
             // toolStripSeparator0
             // 
